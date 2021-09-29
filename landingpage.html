@@ -106,7 +106,15 @@ select{
 .logotab{
     /* margin-top: 100px; */
     height: 60px;
-  background-color: black;
+  background-color: rgb(20, 20, 20);
+ 
+ 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 .logotab .logo{
     height: 65px;
@@ -128,18 +136,24 @@ select{
 }
 .topicons{
     
-    margin-left:1400px;
-    margin-top: -25px;
-    color: white;
+    margin-left:1300px;
+    margin-top: -40px;
+    color: grey;
+    
+   
 
 }
 .topicons i{
-    margin-left: 20px;
+    margin-left: 30px;
+   
+   
+    
 }
 .navbar {
   overflow: hidden;
   float: left;
   margin-left: 30px;
+  
 
   
   
@@ -299,6 +313,67 @@ div .line{
              height: 44px;
              
          }
+         #trendingProducts{
+                margin-top: 35px;
+                margin-left: 50px;
+          display: grid;
+           grid-template-columns: 23% 23% 23% 23%;
+           grid-template-rows: 430px;
+           grid-gap: 40px;
+           
+           height: 700px;
+       
+          
+    }
+    #trendingProducts div{
+        height: 600px;
+        
+    }
+    #trendingProducts div img{
+      width: 100%;
+      height: auto;
+    
+    }
+    #trendingProducts div button{
+        width: 100%;
+        background-color: black;
+        color: white;
+        height: 40px;
+        font-weight: 900;
+        font-size: 28px;
+        margin-bottom: 10px
+    }
+    #favoriteProducts{
+                margin-top: 35px;
+                margin-left: 50px;
+          display: grid;
+           grid-template-columns: 23% 23% 23% 23%;
+           grid-template-rows: 430px;
+           grid-gap: 40px;
+           
+           height: 700px;
+       
+          
+    }
+    #favoriteProducts div{
+        height: 600px;
+        
+    }
+    #favoriteProducts div img{
+      width: 100%;
+      height: auto;
+    
+    }
+    #favoriteProducts div button{
+        width: 100%;
+        background-color: black;
+        color: white;
+        height: 40px;
+        font-weight: 900;
+        font-size: 28px;
+        margin-bottom: 10px
+    }
+    .active {background:rgba(192, 192, 192, 0.993)}
        
      
 
@@ -318,30 +393,34 @@ div .line{
         
         <ul class="nav">
            
-            <li><a href="">WOMEN</a></li>
-            <li><a href="">CURVE</a></li>
-            <li><a href="">MEN</a></li>
-            <li><a href="">KIDS</a></li>
-            <li><a href="">BEAUTY</a></li>
+            <li><a href="landingpage.html">WOMEN</a></li>
+            <li><a href="curve.html">CURVE</a></li>
+            <li><a href="men.html">MEN</a></li>
+            <li><a href="#">KIDS</a></li>
+            <li><a href="#">BEAUTY</a></li>
         
        
          
         </ul>
     </div>
-    <div class="logotab">
+    <div class="logotab" >
         
         <a href="index.html" ><iframe class="logo" src="https://giphy.com/embed/830KKvxgTSpqMrBBrY" width="480" height="178" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></a>
       
         <input type="text" id="searchbar" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />
+
+        <!-- icons icons icons icons -->
         <div class="topicons">
-            <i style="font-size:24px" class="fa">&#xf06e;</i>
-            <i style="font-size:24px" class="fa">	&#xf004;</i>
-            <i style="font-size:24px" class="fa fa-user" aria-hidden="true"></i>
-            <i style="font-size:24px" class="fa fa-shopping-bag" aria-hidden="true"></i>
+          <i style="font-size:40px" class="fa">&#xf06e;</i>
+          <i id="heart" style="font-size:40px" class="fa">	&#xf004;</i>
+         
+          <i style="font-size:40px" class="fa fa-user"  aria-hidden="true"></i>
+          <i style="font-size:40px" class="fa fa-shopping-bag" aria-hidden="true"></i>
+          <p id="countFav"></p>
         </div>
        
     </div>
-    <div class="navbar">
+    <div class="navbar" id="myHeader">
        
         <div class="dropdown">
           <button class="dropbtn">JEANS
@@ -478,8 +557,8 @@ div .line{
       <div class="bottomheader">
       <div class="banner">
           <!-- &nbsp; -->
-          <marquee>  <h1>ONLY TILL MIDNIGHT! $3 RUSH SHIPPING WITH PURCHASES OVER $100! &nbsp; &nbsp; &nbsp;&nbsp; US ONLY &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; SHOP NOW &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 
-            ONLY TILL MIDNIGHT! $3 RUSH SHIPPING WITH PURCHASES OVER $100! &nbsp; &nbsp; &nbsp;&nbsp; US ONLY &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; SHOP NOW  
+          <marquee>  <h1>  ONLY TILL MIDNIGHT! $3 RUSH SHIPPING WITH PURCHASES OVER $100! &nbsp; &nbsp; &nbsp;&nbsp; US ONLY &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; SHOP NOW &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 
+            EXTENDED! $3 RUSH SHIPPING WITH PURCHASES OVER $100! &nbsp; &nbsp; &nbsp;&nbsp; US ONLY &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; SHOP NOW  
           </h1></marquee>
         
       </div>
@@ -529,20 +608,12 @@ div .line{
     <div  style="margin-top: 60px" class="zipbanner">
       <a><img src="https://cdn.shopify.com/s/files/1/0293/9277/files/fashionnova_zip_banner_blackwhite.png?v=1629140581" height="200px"></a>
   </div>
-  <!-- working working  working  workingv  working v working working working working workingv 
-    v  v v v working working working working workingvvvvv working working working working working
-     workingvv -->
-  <div class="favoriteProducts">
-    <h1>CUSTOMER FAVORITES</h1>
-
-  </div>
-  <div class="trendingProducts">
-    <h1>TRENDING IN</h1>
-
-  </div>
-    <!-- working working  working  workingv  working v working working working working workingv 
-    v  v v v working working working working workingvvvvv working working working working working
-     workingvv -->
+     <h1 style="margin-left: 25px;">CUSTOMER FAVORITES</h1>
+     <!-- javascript will do this part -->
+  <div id="favoriteProducts"></div>
+  <h1 style="margin-left: 25px;">TRENDING IN</h1>
+  <div id="trendingProducts"></div>
+     <!-- Thanks javascript -->
     
        
     
@@ -550,7 +621,7 @@ div .line{
  </div>
 
    <!-- footer boundry begins -->
-    <div class="footer">
+    <div style="margin-top: 20px;" class="footer">
        <div class="left">
            <h2 style="text-align: center; margin-left: 10px;">SHOP FASTER WITH THE APP</h2>
            <div  style="margin-top: -50px; margin-left: 20px">
@@ -566,40 +637,40 @@ div .line{
          
                <table>
                    <tr class="head">
-<td><b>GET HELP</b></td>
-<td><b>COMPANY</b></td>
-<td><b>QUICKLINKS</b></td>
+                                  <td><b>GET HELP</b></td>
+                                  <td><b>COMPANY</b></td>
+                                  <td><b>QUICKLINKS</b></td>
                        
                    </tr>
                 </div>
                 
                 <div>
                    <tr>
-<td>HELP CENTER</td>
-<td>CAREERS</td>
-<td>SIZE GUIDE</td>
+                                  <td>HELP CENTER</td>
+                                  <td>CAREERS</td>
+                                  <td>SIZE GUIDE</td>
                     
                 </tr>
                 <tr>
-<td>TRACK ORDER</td>
-<td>ABOUT</td>
-<td>GIFT CARDS</td>
+                                  <td>TRACK ORDER</td>
+                                  <td>ABOUT</td>
+                                  <td>GIFT CARDS</td>
                     
                 </tr>
                 <tr>
-<td>SHIPPING INFO</td>
-<td>STORES</td>
+                                  <td>SHIPPING INFO</td>
+                                  <td>STORES</td>
                    
                     
                 </tr>
                 <tr>
-<td>RETURNS</td>
-<td>Want to collab?</td>
+                                  <td>RETURNS</td>
+                                  <td>Want to collab?</td>
                    
                     
                 </tr>
                 <tr>
-<td>CONTACT US</td>
+                                  <td>CONTACT US</td>
                    
                    
                     
@@ -614,7 +685,7 @@ div .line{
            <input type="email" id="email" name="email" placeholder="Email Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8594;">
            <p style="margin-top: 10px; margin-left: 44px; font-size: 12px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            By signing up for email, you agree to Fashion Nova's <a href="landingpage.html">Terms of Service and Privacy</a>Policy.</p>
+            By signing up for email, you agree to Fashion Nova's <a href="#">Terms of Service and Privacy</a>Policy.</p>
             <div class="socialmedia">
             <a href="#" class="fa fa-facebook"></a>
              <a href="#" class="fa fa-twitter"></a>
@@ -631,6 +702,8 @@ div .line{
        </div>
       
    </div> 
+<!-- 
+   page ends here -->
 
    
     
@@ -640,13 +713,254 @@ div .line{
 
 
     
-    
+    //this function is sliding the title
      function titleMarquee() {
       var titleText = document.title;
       titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
       document.title = titleText;
      setTimeout("titleMarquee()", 450);
      }
+
+
+
+
+     let favouriteData = [
+    {
+      name: "Dragon Ninja 3 Piece Costume Set - Black/Red",
+      color: "light-wash",
+      price: "$41.99",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/09-11-20Studio1_MS_DOM_15-16-02_11_85401_BlackRed_0116_JK_468x.jpg?v=1599864927",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/09-09-20Studio3_AP_SA_09-19-21_7_85401_BlackRed_P_0580_PLUS_WG_468x.jpg?v=1599671713"
+    },
+    {
+      name: "Basketball Bunny Babe 5 Piece Costume Set - White/Blue",
+      color: " White/Blue",
+     price: "$48.99",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_2_MA_AG_11-04-33_5_559604_WhiteBlue_P_4115_JD_WG_468x.jpg?v=1568334418",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_2_MA_AG_11-07-42_5_559604_WhiteBlue_P_4159_JD_dc2a75eb-42e7-4026-92f0-75e52c981d47_468x.jpg?v=1568334418"
+    },
+    {
+      name: "Keep Your Shine Sequin Mini Dress - Blush",
+      color: "Red",
+      price: "$.99",
+      fav: "	&#xf004;",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Don_tDoubtMeMidiDress-Red_MER_c024357f-b502-4ce0-b6f5-eec97a202886_468x.jpg?v=1618945842",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/09-26-19_Studio_2_DV_KYS_10-16-50_6__KSD1575_Red_P_29868_WG_468x.jpg?v=1569961071"
+    },
+    {
+      name: "Flex Game Strong High Rise Skinny Jeans-Dark",
+      color: "Blue",
+      price: "$34.99",
+      fav: "	&#xf004;",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/FlexGameStrongHighRiseSkinnyJeans-DarkBlueWash_MER_468x.jpg?v=1591136753",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/06-26-19_Studio_1_DV_11-21-18_7__FNF8180HR_DarkWash_3596_JD_468x.jpg?v=1568680386"
+    },
+]
+     let trendinginData = [
+    {
+      name: "Marilyn High Waisted Skinny Jeans - Light Wash",
+      color: "light-wash",
+      price: "$27.99",
+      fav: "	&#xf004;",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_468x.jpg?v=1587588026",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_bba19deb-2873-40b2-9db7-6bdcf751f5ce_468x.jpg?v=1604518599"
+    },
+    {
+      name: "Franchesca Fur Jacket - Black",
+      color: "Black",
+      fav: "	&#xf004;",
+      
+      price: "$64.99",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Franchesca_Fur_Jacket_-_Black_1_360x.jpg?v=1615419696",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Fashion_Nova_07-19-17-357_468x.jpg?v=1568669584"
+    },
+    {
+      name: "Kallan Knit Dress - Black",
+      color: "Black",
+      price: "$26.99",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/KallanKnitDress-Black_MER_468x.jpg?v=1585952721",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Fashion_Nova_07-18-17-070_468x.jpg?v=1568669548"
+    },
+    {
+      name: "Flex Game Strong High Rise Skinny Jeans-Dark",
+      color: "Dark",
+      price: "$33.99",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/KeepYourShineSequinMiniDress-Blush_MER_468x.jpg?v=1602868940",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/06-17-20Studio2_MS_SD_13-39-41_42_D4568A_Blush_4722_WG_468x.jpg?v=1592430583"
+    },
+]
+function  showFavouriteProducts(){
+    favouriteData.forEach(function (el){
+        let parent = document.getElementById("favoriteProducts")
+         let div= document.createElement("div");
+         let img= document.createElement("img");
+         let product_price= document.createElement("p");
+         let product_name= document.createElement("p");
+         img.src = el.img;
+      
+         div.style.paddingBottom="18px";
+         
+         product_name.textContent= el.name;
+         product_price.textContent= el.price;
+        
+
+
+         let add_button= document.createElement("button")
+         let fav_button= document.createElement("button")
+         fav_button.textContent=  "Favourites";
+         add_button.style.height="50px"
+         
+         fav_button.style.border="3px solid black"
+         fav_button.style.width="51%"
+         fav_button.style.height="40px"
+         fav_button.style.float="right"
+         
+         fav_button.style.marginTop="-50px"
+         fav_button.style.marginRight="20px"
+
+         
+
+         fav_button.style.backgroundColor="red"
+         fav_button.style.color="white"
+         fav_button.onclick = function(){
+          
+          addtofav(el);
+        }
+         
+
+      
+      
+        
+         add_button.innerText= "Add to cart";
+         add_button.onclick = function(){
+          
+             addtoCart(el);
+           }
+          
+         div.append(img, product_name, product_price, fav_button, add_button)
+         parent.append(div);
+        });
+   }
+
+function showTrendProducts(){
+    trendinginData.forEach(function (el){
+        let parent = document.getElementById("trendingProducts")
+      let x = document.getElementById("heart")
+         let div= document.createElement("div");
+         let img= document.createElement("img");
+         let product_price= document.createElement("p");
+         let product_name= document.createElement("p");
+         img.src = el.img;
+      
+         div.style.paddingBottom="18px";
+         
+         product_name.textContent= el.name;
+         product_price.textContent= el.price;
+        
+
+
+         let add_button= document.createElement("button")
+         let fav_button= document.createElement("button")
+         fav_button.textContent=  "Favourites";
+         fav_button.style.border="3px solid black"
+         fav_button.style.width="51%"
+         fav_button.style.height="40px"
+         fav_button.style.float="right"
+         
+         fav_button.style.marginTop="-50px"
+         fav_button.style.marginRight="20px"
+
+         fav_button.style.backgroundColor="red"
+         fav_button.style.color="white"
+         add_button.style.height="50px"
+         fav_button.onclick = function(){
+          
+          addtofav(el);
+        }
+         
+
+      
+      
+        
+         add_button.innerText= "Add to cart";
+         add_button.onclick = function(){
+          
+             addtoCart(el);
+           }
+          
+         div.append(img, product_name, product_price, fav_button, add_button)
+         parent.append(div);
+        });
+   }
+
+   showTrendProducts()
+   showFavouriteProducts()
+   if(localStorage.getItem("fashion_cart")===null){
+     localStorage.setItem("fashion_cart", JSON.stringify([]));
+   }
+   if(localStorage.getItem("fashion_fav")===null){
+     localStorage.setItem("fashion_fav", JSON.stringify([]));
+   }
+
+   function addtoCart(el){
+      
+         
+         let product_cart= JSON.parse(localStorage.getItem("fashion_cart"));
+        
+         
+        
+         product_cart.push(el);
+         
+        
+         localStorage.setItem("fashion_cart", JSON.stringify(product_cart));
+        }
+   var countFav=0;
+   function addtofav(el){
+    
+     countFav++;
+     
+     var text = document.getElementById("countFav")
+     text.style.backgroundColor="black"
+     text.style.color="red"
+     text.style.fontSize="25px"
+     text.style.fontWeight="900"
+     text.style.width="30px"
+     text.style.borderRadius="100%"
+     text.style.marginTop="-35px"
+     text.style.marginLeft="120px"
+     text.textContent= countFav; 
+     let product_fav= JSON.parse(localStorage.getItem("fashion_fav"));
+        
+         
+        
+        product_fav.push(el);
+        
+       
+        localStorage.setItem("fashion_fav", JSON.stringify(product_fav));
+       }
+
+   
+// This function is making the header fixed in the top for letting users to jump to any other page without scrolling all the way up
+   window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+
+
+// This loop is finding the current page of the document and changing the background color to grey(refer to active class in css)
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL) {
+        document.links[i].className = 'active';
+    }
+}
     
     </script>
      
