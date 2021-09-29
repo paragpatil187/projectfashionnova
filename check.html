@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <title>Document</title>
     <style>
               #trendingProducts{
@@ -56,12 +58,15 @@
       name: "Marilyn High Waisted Skinny Jeans - Light Wash",
       color: "Black",
       price: "$27.99",
+      fav: "	&#xf004;",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_468x.jpg?v=1587588026",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_bba19deb-2873-40b2-9db7-6bdcf751f5ce_468x.jpg?v=1604518599"
     },
     {
       name: "Franchesca Fur Jacket - Black",
       color: "Black",
+      fav: "	&#xf004;",
+      
       price: "$64.99",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Franchesca_Fur_Jacket_-_Black_1_360x.jpg?v=1615419696",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Fashion_Nova_07-19-17-357_468x.jpg?v=1568669584"
@@ -70,6 +75,7 @@
       name: "Don't Doubt Me Midi Dress - Red",
       color: "Red",
       price: "$69.99",
+      fav: "	&#xf004;",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Don_tDoubtMeMidiDress-Red_MER_c024357f-b502-4ce0-b6f5-eec97a202886_468x.jpg?v=1618945842",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/09-26-19_Studio_2_DV_KYS_10-16-50_6__KSD1575_Red_P_29868_WG_468x.jpg?v=1569961071"
     },
@@ -77,6 +83,7 @@
       name: "Flex Game Strong High Rise Skinny Jeans - Dark Blue Wash",
       color: "Blue",
       price: "$34.99",
+      fav: "	&#xf004;",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/FlexGameStrongHighRiseSkinnyJeans-DarkBlueWash_MER_468x.jpg?v=1591136753",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/06-26-19_Studio_1_DV_11-21-18_7__FNF8180HR_DarkWash_3596_JD_468x.jpg?v=1568680386"
     },
@@ -94,12 +101,11 @@ function showTrendProducts(){
          
          product_name.textContent= el.name;
          product_price.textContent= el.price;
-         let fav_buttn= document.createElement("button")
-         let fav_icon=document.createElement("i")
-         i.innerText="&#xf004;"
-         i.style.fontsize="24px"
+        
+
 
          let add_button= document.createElement("button")
+      
         //  <i style="font-size:24px" class="fa">	&#xf004;</i>
         
          add_button.innerText= "Add to cart";
@@ -108,7 +114,7 @@ function showTrendProducts(){
         //      addtoCart(el);
         //    }
           
-         div.append(img, product_name, product_price,fav_buttn, add_button)
+         div.append(img, product_name, product_price, add_button)
          parent.append(div);
         });
    }
