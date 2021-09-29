@@ -1,0 +1,76 @@
+
+.likeNav{
+    background-color: black;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 1px;
+    display: flex;
+    /* box-sizing: border-box; */
+}
+.likeNav > div{
+    width: 5%;
+    /* border: 1px solid white; */
+    align-items: center;
+    padding-top: 10px;
+}
+#sliding{
+    width: 90%;
+    /* border: 1px solid white; */
+    padding-top: 0px;
+}
+#container{
+    /* border: 1px solid red; */
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 5px;
+}
+.homeAccount{
+    /* border: 1px solid black; */
+    width: 96%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.homeAccount div:nth-child(1),.homeAccount div:nth-child(3){
+    padding-top: 3px;
+}
+h1{
+    color: #000;
+    font: 600 28px/28px proxima-nova,Arial,sans-serif;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    margin: 19px 0 0;
+    text-align: center;
+    height: 73px;
+    font-size: 30px;
+}
+a{
+    color: black;
+    font-weight: bolder;
+}
+input{
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+    border: 1px solid #949494;
+    
+    height: 45px;
+    padding-left: 20px;
+    width: 100%;
+}
+button{
+    background-color: black;
+    width: 520px;
+    height: 45px;
+    /* margin: auto; */
+    text-align: center;
+    color:white;
+    margin-top: 20px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat Account | Fashion Nova</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="create account.css">
+    
+</head>
+<body>
+    <div class="likeNav">
+        <div><span class="material-icons"> chevron_left</span></div>
+        <div id="sliding"> <p> Track your order </p>          </div>
+        <div><span class="material-icons">navigate_next</span></div>       
+    </div>
+
+    <div class="homeAccount">
+        <div><a href="">Home</a></div>
+        <div><span class="material-icons">navigate_next</span></div>
+        <div><span>Account</span></div>        
+    </div>
+
+    <div id="container">
+        <form action="">
+            <h1>CREAT ACCOUNT</h1>
+            <p><a href="login.html">Back to Customer Login</a></p>
+            <input class="input" placeholder="First Name" type="text"><br>
+            <input class="input" placeholder="Last Name" type="text"><br>
+            <input class="input" placeholder="Email" type="text"><br>
+            <input class="input" placeholder="Password" type="text"><br>
+            <a href="">Forgot your password?</a><br><br>
+            <div class="checkboxDiv">
+                <input checked type="checkbox" name="" class="checkbox"> &nbsp;&nbsp; <label>Yes! Sign me up to receive emails from Fashion Nova with the latest deals, sales, and updates.</label>
+            </div>
+            <div class="checkboxDiv">
+                <input type="checkbox" name="" class="checkbox"> &nbsp;&nbsp; <label>I agree to Fashion Nova’s Terms of Service and Privacy Policy</label>
+            </div>
+            
+            <button>CREATE ACCOUNT</button>
+        </form>
+        
+    </div>
+</body>
+</html>
+<script>
+    let data = [
+        "USE AFTERPAY TO BUY NOW & PAY LATER!",
+        "$3 RUSH 1-DAY SHIPPING WITH PURCHASES OVER &100! US ONLY",
+        "Track your order"
+    ];
+
+    let container = document.getElementById("sliding");
+    startSlidshow();
+    function startSlidshow() {
+        
+        let count = 0;
+
+        let p = document.createElement("p");
+        p.innerText = data[count];
+
+        setInterval(function () {
+            count++;
+            container.innerHTML = null;
+            // alert("hai")
+
+            if(count === data.length){
+                count = 0;
+            }
+            p.innerText = data[count];
+            container.append(p);
+            
+        },3000);
+
+        
+    }
+</script>
