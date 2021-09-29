@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+              #trendingProducts{
+                margin-top: 35px;
+                margin-left: 50px;
+          display: grid;
+           grid-template-columns: 23% 23% 23% 23%;
+           grid-template-rows: 430px;
+           grid-gap: 40px;
+           
+           height: 600px;
+       
+          
+    }
+    #trendingProducts div{
+        height: 600px;
+        
+    }
+    #trendingProducts div img{
+      width: 100%;
+      height: auto;
+    
+    }
+    #trendingProducts div button{
+        width: 100%;
+        background-color: black;
+        color: white;
+        height: 40px;
+        font-weight: 900;
+        font-size: 28px;
+    }
+    </style>
+</head>
+<body>
+    <h1>CUSTOMER FAVORITES</h1>
+    <div id="favoriteProducts">
+      
+
+    </div>
+    <h1>TRENDING IN</h1>
+    <div id="trendingProducts">
+     
+    </div>
+    
+</body>
+</html>
+<script>
+            let trendinginData = [
+    {
+      name: "Marilyn High Waisted Skinny Jeans - Light Wash",
+      color: "Black",
+      price: "$27.99",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_468x.jpg?v=1587588026",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_bba19deb-2873-40b2-9db7-6bdcf751f5ce_468x.jpg?v=1604518599"
+    },
+    {
+      name: "Franchesca Fur Jacket - Black",
+      color: "Black",
+      price: "$64.99",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Franchesca_Fur_Jacket_-_Black_1_360x.jpg?v=1615419696",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Fashion_Nova_07-19-17-357_468x.jpg?v=1568669584"
+    },
+    {
+      name: "Don't Doubt Me Midi Dress - Red",
+      color: "Red",
+      price: "$69.99",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Don_tDoubtMeMidiDress-Red_MER_c024357f-b502-4ce0-b6f5-eec97a202886_468x.jpg?v=1618945842",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/09-26-19_Studio_2_DV_KYS_10-16-50_6__KSD1575_Red_P_29868_WG_468x.jpg?v=1569961071"
+    },
+    {
+      name: "Flex Game Strong High Rise Skinny Jeans - Dark Blue Wash",
+      color: "Blue",
+      price: "$34.99",
+      img: "https://cdn.shopify.com/s/files/1/0293/9277/products/FlexGameStrongHighRiseSkinnyJeans-DarkBlueWash_MER_468x.jpg?v=1591136753",
+      background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/06-26-19_Studio_1_DV_11-21-18_7__FNF8180HR_DarkWash_3596_JD_468x.jpg?v=1568680386"
+    },
+]
+
+function showTrendProducts(){
+    trendinginData.forEach(function (el){
+        let parent = document.getElementById("trendingProducts")
+         let div= document.createElement("div");
+         let img= document.createElement("img");
+         let product_price= document.createElement("p");
+         let product_name= document.createElement("p");
+         img.src = el.img;
+         div.style.paddingBottom="18px";
+         
+         product_name.textContent= el.name;
+         product_price.textContent= el.price;
+         let fav_buttn= document.createElement("button")
+         let fav_icon=document.createElement("i")
+         i.innerText="&#xf004;"
+         i.style.fontsize="24px"
+
+         let add_button= document.createElement("button")
+        //  <i style="font-size:24px" class="fa">	&#xf004;</i>
+        
+         add_button.innerText= "Add to cart";
+        //  add_button.onclick = function(){
+          
+        //      addtoCart(el);
+        //    }
+          
+         div.append(img, product_name, product_price,fav_buttn, add_button)
+         parent.append(div);
+        });
+   }
+
+   showTrendProducts()
+
+
+
+</script>
