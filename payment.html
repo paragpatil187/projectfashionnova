@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahion Nova - Information Fashion Nova - Payment</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <div id="nav">
+        <div><img class="logo" src="https://i.ibb.co/bQfR3pf/Capture.jpg" alt=""></div>
+        <div><img class="secure" src="https://i.ibb.co/8mxnCTy/Capture.jpg" alt=""></div>
+    </div>
+    <div class="container">
+        <div class="leftBox">
+            <img src="https://i.ibb.co/9ZGPg1T/Capture.jpg" alt="">
+            <h1 style="text-align: center;" >PAYMENT METHOD</h1>
+            <form style="margin-top: 20px;" onsubmit="confirm(event)" id="payment" action="">
+                <input style="border:5px solid" type="checkbox" name="" id="checkbox">  <label style="font-size: 25px; font-weight: bolder;"> Credit card</label>
+                
+                
+                <p style="margin-left: 60px">We accept all major credit cards</p>
+                <input required="required"  class="input" placeholder="CARD NUMBER" type="text"><br>
+                <input required="required" class="input" placeholder="Name On Card" type="text"><br>
+                <input style="width: 60%" required="required"  class="input" placeholder="Expiration Date (MM/YY)" type="text">
+                <input style="width: 30%; float: right;"  required="required"  class="input" placeholder="CVV" type="password"><br>
+            <div class="checkboxDiv">
+            <input type="checkbox" name="" class="checkbox"> &nbsp;&nbsp; <label>	Save my information for a faster checkout</label>
+        </div>
+            <p>By submitting your order, you agree to our Terms of Service, Privacy Policy, and Returns Policy</p>
+            <button>PAY NOW</button>
+           
+        </div>
+        <div style="float: right;" class="rightBox">
+        <p style="text-align: center;color: green;font-size: 30px;" id ="success"></p>
+    
+    </div>
+    </div>
+</body>
+</html>
+
+<script src="js/payment.js"></script>

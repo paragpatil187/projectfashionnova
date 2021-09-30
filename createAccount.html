@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat Account | Fashion Nova</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/createAccount.css">
+    
+</head>
+<body>
+    <div class="likeNav">
+        <div><span class="material-icons"> chevron_left</span></div>
+        <div id="sliding"> <p> Track your order </p>          </div>
+        <div><span class="material-icons">navigate_next</span></div>       
+    </div>
+
+    <div class="homeAccount">
+        <div><a href="landingpage.html">Home</a></div>
+        <div><span class="material-icons">navigate_next</span></div>
+        <div><span>Account</span></div>        
+    </div>
+
+    <div id="container">
+        <form onsubmit="addProduct(event)" id="signup">
+            <h1>CREATE ACCOUNT</h1>
+            <p><a href="login.html">Back to Customer Login</a></p>
+            <input required="required" id="fName" class="input" placeholder="First Name" type="text"><br>
+            <input required="required" id="lName" class="input" placeholder="Last Name" type="text"><br>
+            <input required="required" id="email" class="input" placeholder="Email" type="text"><br>
+            <input required="required" id="password" class="input" placeholder="Password" type="password"><br>
+            <a href="">Forgot your password?</a><br><br>
+            <div class="checkboxDiv">
+                <input checked type="checkbox" name="" class="checkbox"> &nbsp;&nbsp; <label>Yes! Sign me up to receive emails from Fashion Nova with the latest deals, sales, and updates.</label>
+            </div>
+            <div class="checkboxDiv">
+                <input type="checkbox" name="" class="checkbox"> &nbsp;&nbsp; <label>I agree to Fashion Nova’s Terms of Service and Privacy Policy</label>
+            </div>
+            <a href="landingpage.html"><button>CREATE ACCOUNT</button></a>
+            
+        </form>
+        
+    </div>
+</body>
+</html>
+<script src="js/createAccount.js">
+  
+
+</script>

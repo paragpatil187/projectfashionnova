@@ -1,12 +1,12 @@
-
 .likeNav{
     background-color: black;
     height: 45px;
     width: 100%;
     text-align: center;
     color: white;
-    padding-top: 1px;
+    /* padding-top: 1px; */
     display: flex;
+    flex-direction: row;
     /* box-sizing: border-box; */
 }
 .likeNav > div{
