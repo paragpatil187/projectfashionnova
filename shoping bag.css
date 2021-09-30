@@ -1,12 +1,13 @@
 
 .likeNav{
     background-color: black;
-    height: 45px;
+    height: 60px;
     width: 100%;
     text-align: center;
     color: white;
     padding-top: 1px;
     display: flex;
+    margin-bottom: 2px
     /* box-sizing: border-box; */
 }
 .likeNav > div{
@@ -16,7 +17,7 @@
     padding-top: 10px;
 }
 #sliding{
-    width: 90%;
+    width: 100%;
     /* border: 1px solid white; */
     padding-top: 0px;
 }
