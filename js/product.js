@@ -9,7 +9,7 @@
         document.title = titleText;
        setTimeout("titleMarquee()", 450);
        }
-
+      
 
        //this following function is pushing the data to cart object in local storage
 
@@ -26,25 +26,31 @@
        if(localStorage.getItem("fashion_cart")===null){
          localStorage.setItem("fashion_cart", JSON.stringify([]));
         }
+         //checking if we need to create the object in local storage from scratch or it already exist 
+  
+   if(localStorage.getItem("fashion_fav")===null){
+    localStorage.setItem("fashion_fav", JSON.stringify([]));
+   }
+    
+   function addtofav(data){
+    var btn= document.getElementById("favB");
+    btn.style.color="red";
+    var heart= document.getElementById("heart");
+      heart.style.color="red";
+      let product_fav= JSON.parse(localStorage.getItem("fashion_fav"));
+         product_fav.push(data[0]);
+     localStorage.setItem("fashion_fav", JSON.stringify(product_fav));
+    }
         
     
        function addtocart(data){
          //this is changing the color icon
+         
          var bag= document.getElementById("shoppingbag")
          bag.style.color="white"
-         
-                
-       
-          
-             
-             let product_cart= JSON.parse(localStorage.getItem("fashion_cart"));
-            
-             
-            
-             product_cart.push(data[0]);
-             
-            
-             localStorage.setItem("fashion_cart", JSON.stringify(product_cart));
+           let product_cart= JSON.parse(localStorage.getItem("fashion_cart"));
+          product_cart.push(data[0]);
+          localStorage.setItem("fashion_cart", JSON.stringify(product_cart));
 
          }
   

@@ -133,12 +133,18 @@ color: grey;
 
 
 }
-.topicons i{
-margin-left: 30px;
+
+.topicons i,a{
+
+margin-left: 20px;
+color: grey;
 
 
 
 }
+.topicons i:hover{
+    color: aliceblue;
+  } 
             /* navigation bar */
 .navbar {
 overflow: hidden;
