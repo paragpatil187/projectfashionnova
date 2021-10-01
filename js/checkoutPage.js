@@ -17,7 +17,7 @@ if(localStorage.getItem("temp_user_details")==null){
  
       function confirm(e){
          e.preventDefault();
-         localStorage.removeItem("temp_user_details");
+      
          setTimeout(function(){
          window.location.href = "payment.html"; }, 500);
           }
