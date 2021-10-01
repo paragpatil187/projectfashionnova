@@ -68,6 +68,10 @@ showProducts();
          
           
       }
+
+      let total= JSON.parse(localStorage.getItem("total"));
+var totalprice = document.getElementById("totalamount")
+totalprice.textContent= "Total price: $" + total.totalprice + " USD";
          
 
         
