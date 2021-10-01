@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart | Fashion Nova</title>
+    
+    
+    <link rel="stylesheet" href="shopingBag.css">
+    <!-- <script src="shopingBag.js"></script> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="likeNav">
+        <div><span class="material-icons"> chevron_left</span></div>
+        <div id="sliding"> <p> Track your order </p>          </div>
+        <div><span class="material-icons">navigate_next</span></div>       
+    </div>
+
+    <div class="homeAccount">
+        <div><a href="">Home</a></div>
+        <div><span class="material-icons">navigate_next</span></div>
+        <div><span>Shopping Bag</span></div>        
+    </div>
+
+    <div class="shoppingBag">
+        <div><a href="home.html">>Continue Shopping</a></div>
+        <div><h1>SHOPPING BAG</h1></div>              
+    </div>
+
+    <div class="freeShipping">
+        <p>$100.00 USD FROM FREE SHIPPING! <a href="">keep shoppingBag</a></p>
+        <div class="underdiv"></div>
+    </div>
+
+    <div id="bag" class="bagContainer">
+        <div class="beforeCon">
+            <p>Your shopping bag is empty</p>
+            <a href="landingpage.html"><button class="btn">CONTINUE SHOPPING</button></a>
+        </div>
+        <div id="bagDiv">
+            <div id="bagDivLeft" class="bagDivLeft">
+                
+            </div>
+            <div class="bagDivRight">
+                <div id="container">
+            
+                    <form>
+                        <input type="text">
+                        <button>Apply</button>
+                    </form>
+                    <div class="checkoutDiv">
+                        <div class="subtotal">
+                            <p id="subTotal">Sub total (1 item)</p>
+                            <p id="sum" style="margin-left:200px">$15.00 USD</p>
+                        </div>
+                        <div>
+                            <p>or payments of something need to be edit</p>
+                        </div>
+                        <a href="checkoutPage.html"><button>CHECKOUT</button></a>
+                    </div>
+                    <div>
+                        <img src="https://i.ibb.co/XJPtDjP/Capture.jpg" alt="no load">
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        
+        
+    </div>
+
+<!-- ************************************** -->
+    <div class="aboveLabel">
+        <h2>SUGGESTED ADD-ONS</h2>
+    </div>
+
+    <div id="products" class="products">
+
+    </div>
+
+    <div class="aboveLabel">
+        <h2>RECOMMENDED FOR YOUR</h2>
+    </div>
+
+    <div id="productsRecommend" class="products">
+
+        
+    </div>
+</body>
+</html>
+<script>
+    
+    var count = 1;
+    var total = 0;
+    let data = [
+        "USE AFTERPAY TO BUY NOW & PAY LATER!",
+        "$3 RUSH 1-DAY SHIPPING WITH PURCHASES OVER &100! US ONLY",
+        "Track your order"
+    ];
+    //suggestion products list
+    var productsSug = [
+        {
+            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_3_JP_EA_11-30-21_13_559604_WhiteBlue_P_PLUS_0728_CROP_NT_NT.jpg?v=1568334418",
+            title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
+            name:"Sparkle And Shine Rhinestone Bodystocking - Black",
+            price:400,
+            innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
+        },
+        {
+            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-13-21Studio5_SN_KJ_14-21-10_54_21JPS05CV26_Blackcombo_7063_KS_360x.jpg?v=1629408809",
+            title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
+            name:"Basketball bunny Babe 5 Piece Costume Set - White/Blue",
+            price:400,
+            innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
+        },
+        {
+            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-24-21Studio5_MS_KP_14-48-10_50_21JPS053075_Orangecombo_4203_PLUS_PB.jpg?v=1629850310",
+            title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
+            name:"Dragon Ninja 3 Piece Costume Set - Black/Red",
+            price:400,
+            innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
+        }
+    ];
+
+    //recommended products list
+    var productsRecommend = [
+        {
+            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/09-15-21Halloween_SN_16-51-19_LOOK_5_3427_PB_DM_PLUS.jpg?v=1631925248",
+            title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
+            name:"Sparkle And Shine Rhinestone Bodystocking - Black",
+            price:400,
+            innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
+        },
+        {
+            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/06-22-20Studio3_CE_MJ_09-57-16_3_D4568A_Blush_P_0013_PLUS_NT.jpg?v=1592855451",
+            title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
+            name:"Basketball bunny Babe 5 Piece Costume Set - White/Blue</P>",
+            price:400,
+            innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
+        },
+        {
+            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_3_JP_EA_11-30-04_13_559604_WhiteBlue_P_PLUS_0720_NT_NT.jpg?v=1568334418",
+            title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
+            name:"Dragon Ninja 3 Piece Costume Set - Black/Red",
+            price:400,
+            innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
+        }
+    ];
+        
+    
+
+    let container = document.getElementById("sliding");
+    startSlidshow();
+    //***********************************************
+    var parentSug = document.getElementById("products");
+
+    if (localStorage.getItem("fashion_cart") === null) {
+        localStorage.setItem("fashion_cart", JSON.stringify([]));
+    }
+
+    showprod(parentSug, productsSug)
+
+    
+    
+    function showprod(parent, list){
+        // console.log("p",productsList)
+        list.forEach(function(prod) {
+            console.log('prod:', prod)
+            
+            console.log("parent", parent)
+            let div = document.createElement("div");
+            // div.setAttribute("id", "prod");
+            div.setAttribute("class", "prod");
+
+            div.innerHTML = null;
+
+            let image = document.createElement("img");
+            image.src = prod.imgsrc;
+            console.log('productsList[img]:', prod.imgsrc)
+            image.setAttribute("class", "imgAnd");
+            image.setAttribute("id","myImg");
+
+            let div1 = document.createElement("div");
+            div1.setAttribute("class", "details");
+            div1.setAttribute("id","details");
+
+            let p1 = document.createElement("p");
+            p1.setAttribute("class", "redP");
+            p1.setAttribute("id","redp");
+            p1.innerText = prod.title;
+            console.log('productsList[title]:', prod.title)
+
+            let p2 = document.createElement("p");
+            p2.setAttribute("class", "blackP");
+            p2.innerText = prod.name;
+            
+            let p3 = document.createElement("p");
+            p3.setAttribute("class", "doller");
+            // p3.innerText = prod.price;
+            p3.innerHTML = prod.innerH;
+            
+
+            div1.append(p1,p2,p3);
+
+            let btn = document.createElement("button");
+            btn.innerText = "ADD TO BAG";
+
+            btn.onclick = function(){
+                addtoBag(prod);
+            }
+            console.log("div",div)
+            div.append(image,div1,btn);
+
+            parent.append(div)
+        });
+        let my_products = JSON.parse(localStorage.getItem("fashion_cart"));
+        if(my_products.length > 0){
+            showfromBag();
+        }
+        
+        
+    }
+
+    var parentRecommend = document.getElementById("productsRecommend");
+    showprod(parentRecommend, productsRecommend)
+
+    function startSlidshow() {
+        
+        let count = 0;
+
+        let p = document.createElement("p");
+        p.innerText = data[count];
+
+        setInterval(function () {
+            count++;
+            container.innerHTML = null;
+            // alert("hai")
+
+            if(count === data.length){
+                count = 0;
+            }
+            p.innerText = data[count];
+            container.append(p);
+            
+        },3000);
+       
+    }
+
+    
+
+
+    function addtoBag(prod) {
+        alert("successfully added")
+        
+        
+        // store in loacal storage
+        let my_products = JSON.parse(localStorage.getItem("fashion_cart"));
+        
+        my_products.push(prod);
+
+        localStorage.setItem("fashion_cart", JSON.stringify(my_products));
+        showfromBag();
+        total = 0;
+    }
+
+    function showfromBag(){       
+        
+        let my_products = JSON.parse(localStorage.getItem("fashion_cart"));
+
+        let div = document.getElementById("bagDivLeft"); 
+            div.innerHTML = null;
+            
+        total = 0;
+        my_products.forEach(function(prod) {
+            let containBag = document.getElementById("bag");       
+        
+        
+
+        let selectedProd = document.createElement("div");
+        selectedProd.setAttribute("id", "selectedProd");
+        
+        
+        let img = document.createElement("img");
+        img.setAttribute("class", "selectedImg");
+        img.src = prod.imgsrc;
+        
+
+        let imgDetail = document.createElement("img");
+        imgDetail.setAttribute("class", "imgDetail");
+        imgDetail.src = "https://i.ibb.co/qC3zSPX/Capture.jpg";
+
+        selectedProd.append(img,imgDetail);
+        console.log('count:', count)
+        div.append(selectedProd)
+
+        let subtotal = document.getElementById("subTotal");
+        subtotal.innerText = "Sub total " + my_products.length + " items";
+
+        total += prod.price;
+        console.log('total:', total)
+        
+        let sum = document.getElementById("sum");
+        sum.innerText = "$ " + total + " USD";
+
+        
+
+        
+        if(count == 1){            
+            let bagDivRight = document.getElementById("container");
+            console.log('bagDivRight:', bagDivRight.style)
+            bagDivRight.style.display = "block";
+        }
+        count++;
+        // containBag.append(div);
+        });
+        //make div
+
+        
+    }
+
+</script>

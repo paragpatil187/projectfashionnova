@@ -17,7 +17,7 @@
     {
       name: "Dragon Ninja 3 Piece Costume Set - Black/Red",
       color: "light-wash",
-      price: "$41.99",
+      price: "41.99",
       productlink:"#",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/09-11-20Studio1_MS_DOM_15-16-02_11_85401_BlackRed_0116_JK_468x.jpg?v=1599864927",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/09-09-20Studio3_AP_SA_09-19-21_7_85401_BlackRed_P_0580_PLUS_WG_468x.jpg?v=1599671713"
@@ -25,7 +25,7 @@
     {
       name: "Basketball Bunny Babe 5 Piece Costume Set - White/Blue",
       color: " White/Blue",
-     price: "$48.99",
+     price: "48.99",
      productlink:"#",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_2_MA_AG_11-04-33_5_559604_WhiteBlue_P_4115_JD_WG_468x.jpg?v=1568334418",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_2_MA_AG_11-07-42_5_559604_WhiteBlue_P_4159_JD_dc2a75eb-42e7-4026-92f0-75e52c981d47_468x.jpg?v=1568334418"
@@ -33,7 +33,7 @@
     {
       name: "Keep Your Shine Sequin Mini Dress - Blush",
       color: "Red",
-      price: "$29.99",
+      price: "29.99",
       productlink:"#",
       fav: "	&#xf004;",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Don_tDoubtMeMidiDress-Red_MER_c024357f-b502-4ce0-b6f5-eec97a202886_468x.jpg?v=1618945842",
@@ -42,7 +42,7 @@
     {
       name: "Flex Game Strong High Rise Skinny Jeans-Dark",
       color: "Blue",
-      price: "$34.99",
+      price: "34.99",
       productlink:"#",
       fav: "	&#xf004;",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/FlexGameStrongHighRiseSkinnyJeans-DarkBlueWash_MER_468x.jpg?v=1591136753",
@@ -54,7 +54,7 @@
       name: "Marilyn High Waisted Skinny Jeans - Light Wash",
       color: "light-wash",
       productlink: "product.html",
-      price: "$27.99",
+      price: "27.99",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_468x.jpg?v=1587588026",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_bba19deb-2873-40b2-9db7-6bdcf751f5ce_468x.jpg?v=1604518599"
     },
@@ -63,14 +63,14 @@
       color: "Black",
       productlink:"#",
       
-      price: "$64.99",
+      price: "64.99",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Franchesca_Fur_Jacket_-_Black_1_360x.jpg?v=1615419696",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Fashion_Nova_07-19-17-357_468x.jpg?v=1568669584"
     },
     {
       name: "Kallan Knit Dress - Black",
       color: "Black",
-      price: "$26.99",
+      price: "26.99",
       productlink:"#",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/KallanKnitDress-Black_MER_468x.jpg?v=1585952721",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/Fashion_Nova_07-18-17-070_468x.jpg?v=1568669548"
@@ -78,7 +78,7 @@
     {
       name: "Flex Game Strong High Rise Skinny Jeans-Dark",
       color: "Dark",
-      price: "$33.99",
+      price: "33.99",
       productlink:"product.html",
       img: "https://cdn.shopify.com/s/files/1/0293/9277/products/KeepYourShineSequinMiniDress-Blush_MER_468x.jpg?v=1602868940",
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/06-17-20Studio2_MS_SD_13-39-41_42_D4568A_Blush_4722_WG_468x.jpg?v=1592430583"
@@ -98,7 +98,7 @@ function  showFavouriteProducts(){
       
          div.style.paddingBottom="18px";
         product_name.textContent= el.name;
-         product_price.textContent= el.price;
+         product_price.textContent=  "$ " + el.price;
          let add_button= document.createElement("button")
          let fav_button= document.createElement("button")
          fav_button.textContent=  "💗";
@@ -145,7 +145,7 @@ function showTrendProducts(){
          }
           div.style.paddingBottom="18px";
          product_name.textContent= el.name;
-         product_price.textContent= el.price;
+         product_price.textContent= "$ " + el.price;
          let add_button= document.createElement("button")
          let fav_button= document.createElement("button")
          fav_button.textContent=  "💗";
