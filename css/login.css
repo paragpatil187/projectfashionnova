@@ -74,3 +74,100 @@ button{
     color:white;
     margin-top: 20px;
 }
+
+.footer{
+    background-color: black;
+    height: 300px;
+    color: white;
+    width: 100%;
+}
+.left{
+    float: left;
+}
+.middle{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 40%;
+    padding: 30px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    font-size: larger;
+    color: gray;
+    margin-top: 0px;
+}
+ table .head{
+     color:white;
+
+ }
+ .right{
+     
+     
+     color: white;
+     margin-top: 40px;
+    
+ }
+ .socialmedia a{
+     color: gray;
+     margin-left: 44px;
+     text-decoration: none;
+     height: 30px;
+
+ }
+ .right input{
+     width: 24%;
+     margin-left: 50px;
+     height: 44px;
+     
+ }
+ .logotab{
+    /* margin-top: 100px; */
+    height: 60px;
+    background-color: rgb(20, 20, 20);
+    
+    
+    }
+    
+    
+                                         /* logo customisation */
+    .logotab .logo{
+    height: 65px;
+    width: 150px;
+    float: left;
+    margin-left: 3%;
+    }
+    .content{
+    margin-top:  20px;
+    }
+    #searchbar{
+    margin-left: 450px;
+    margin-top: 14px;
+    width: 350px;
+    height: 50%;
+    border-radius:25px;
+    font-size: 15px;
+    
+    }
+                            /* icons are here to customise */
+    .topicons{
+    
+     margin-left:1150px;
+     margin-top: -60px;
+     color: grey;
+     
+     
+     
+     }
+     .topicons i,a{
+     
+     margin-left: 20px;
+     color: grey;
+     
+     
+     
+     } 
+     .topicons i:hover{
+       color: aliceblue;
+     }  

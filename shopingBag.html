@@ -19,25 +19,25 @@
         <div id="sliding"> <p> Track your order </p>          </div>
         <div><span class="material-icons">navigate_next</span></div>       
     </div>
-
+    <!--Mehtab  links for follwing divs -->
     <div class="homeAccount">
-        <div><a href="">Home</a></div>
+        <div><a href="landingpage.html">Home</a></div>
         <div><span class="material-icons">navigate_next</span></div>
         <div><span>Shopping Bag</span></div>        
     </div>
-
+          
     <div class="shoppingBag">
-        <div><a href="home.html">>Continue Shopping</a></div>
+        <div><a href="landingpage.html">>Continue Shopping</a></div>
         <div><h1>SHOPPING BAG</h1></div>              
     </div>
-
-    <div class="freeShipping">
-        <p>$100.00 USD FROM FREE SHIPPING! <a href="">keep shoppingBag</a></p>
+    <!-- Mehtab spellings -->
+    <div class="freeShipping">  
+        <p>$100.00 USD FROM FREE SHIPPING! <a href="">keep shopping bag</a></p>
         <div class="underdiv"></div>
     </div>
 
     <div id="bag" class="bagContainer">
-        <div class="beforeCon">
+        <div id="beforeCon">
             <p>Your shopping bag is empty</p>
             <a href="landingpage.html"><button class="btn">CONTINUE SHOPPING</button></a>
         </div>
@@ -76,6 +76,18 @@
     </div>
 
 <!-- ************************************** -->
+
+<!-- mehtab work started -->
+<div id="flabel" style="display: none" class="aboveLabel">
+    <h2>Your Favorites</h2>
+</div>
+
+<div id="favP" class="products">
+
+</div>
+
+
+ <!-- mehtab work done -->
     <div class="aboveLabel">
         <h2>SUGGESTED ADD-ONS</h2>
     </div>
@@ -95,6 +107,12 @@
 </body>
 </html>
 <script>
+    //  mehtab adding the empty bag message
+    var x = document.getElementById("beforeCon")
+    var m = JSON.parse(localStorage.getItem("fashion_cart"))
+    if( m==null || m.length==0){
+        x.style.display="grid"
+    }
     
     var count = 1;
     var total = 0;
@@ -109,21 +127,21 @@
             img:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_3_JP_EA_11-30-21_13_559604_WhiteBlue_P_PLUS_0728_CROP_NT_NT.jpg?v=1568334418",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Sparkle And Shine Rhinestone Bodystocking - Black",
-            price:400,
+            price:"400",
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         },
         {
             img:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-13-21Studio5_SN_KJ_14-21-10_54_21JPS05CV26_Blackcombo_7063_KS_360x.jpg?v=1629408809",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Basketball bunny Babe 5 Piece Costume Set - White/Blue",
-            price:400,
+            price:"400",
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         },
         {
             img:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-24-21Studio5_MS_KP_14-48-10_50_21JPS053075_Orangecombo_4203_PLUS_PB.jpg?v=1629850310",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Dragon Ninja 3 Piece Costume Set - Black/Red",
-            price:400,
+            price:"400",
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         }
     ];
@@ -134,21 +152,21 @@
             img:"https://cdn.shopify.com/s/files/1/0293/9277/products/09-15-21Halloween_SN_16-51-19_LOOK_5_3427_PB_DM_PLUS.jpg?v=1631925248",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Sparkle And Shine Rhinestone Bodystocking - Black",
-            price:400,
+            price:"400",
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         },
         {
             img:"https://cdn.shopify.com/s/files/1/0293/9277/products/06-22-20Studio3_CE_MJ_09-57-16_3_D4568A_Blush_P_0013_PLUS_NT.jpg?v=1592855451",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Basketball bunny Babe 5 Piece Costume Set - White/Blue</P>",
-            price:400,
+            price:"400",
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         },
         {
             img:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_3_JP_EA_11-30-04_13_559604_WhiteBlue_P_PLUS_0720_NT_NT.jpg?v=1568334418",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Dragon Ninja 3 Piece Costume Set - Black/Red",
-            price:400,
+            price:"400",
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         }
     ];
@@ -171,9 +189,7 @@
     function showprod(parent, list){
         // console.log("p",productsList)
         list.forEach(function(prod) {
-            console.log('prod:', prod)
             
-            console.log("parent", parent)
             let div = document.createElement("div");
             // div.setAttribute("id", "prod");
             div.setAttribute("class", "prod");
@@ -182,7 +198,7 @@
 
             let image = document.createElement("img");
             image.src = prod.img;
-            console.log('productsList[img]:', prod.img)
+            // console.log('productsList[img]:', prod.img)
             image.setAttribute("class", "imgAnd");
             image.setAttribute("id","myImg");
 
@@ -194,7 +210,7 @@
             p1.setAttribute("class", "redP");
             p1.setAttribute("id","redp");
             p1.innerText = prod.title;
-            console.log('productsList[title]:', prod.title)
+            // console.log('productsList[title]:', prod.title)
 
             let p2 = document.createElement("p");
             p2.setAttribute("class", "blackP");
@@ -214,7 +230,7 @@
             btn.onclick = function(){
                 addtoBag(prod);
             }
-            console.log("div",div)
+            // console.log("div",div)
             div.append(image,div1,btn);
 
             parent.append(div)
@@ -256,11 +272,9 @@
 
 
     function addtoBag(prod) {
-        alert("successfully added")
-        
-        
-        // store in loacal storage
+       
         let my_products = JSON.parse(localStorage.getItem("fashion_cart"));
+        x.style.display="none"
         
         my_products.push(prod);
 
@@ -289,21 +303,18 @@
         let img = document.createElement("img");
         img.setAttribute("class", "selectedImg");
         img.src = prod.img;
-        
-
-        let imgDetail = document.createElement("img");
-        imgDetail.setAttribute("class", "imgDetail");
-        imgDetail.src = "https://i.ibb.co/qC3zSPX/Capture.jpg";
+        let imgDetail = document.createElement('div');
+        imgDetail.innerHTML = '<div id="pricetag"> <div class="headings"> <p></p> <p>QUANTITY</p> <p>PRICE</p>  </div>  <div class="matter"> <div>name</div> <div> <input type="number"> <a href="">Remove</a> </div><div class="price"><p>blask</p> <p>USD</p> <p>Final Sale</p> <a href="">Move to Favorites</a> </div> </div><div class="sharecart">  <a href="">Share Your Cart</a> </div>  </div>';
 
         selectedProd.append(img,imgDetail);
-        console.log('count:', count)
+        // console.log('count:', count)
         div.append(selectedProd)
 
         let subtotal = document.getElementById("subTotal");
-        subtotal.innerText = "Sub total " + my_products.length + " items";
+        subtotal.innerText = "Sub total (" + my_products.length + ") items";
 
-        total += prod.price;
-        console.log('total:', total)
+        total += +(prod.price);
+        // console.log('total:', total)
         
         let sum = document.getElementById("sum");
         sum.innerText = "$ " + total + " USD";
@@ -313,15 +324,58 @@
         
         if(count == 1){            
             let bagDivRight = document.getElementById("container");
-            console.log('bagDivRight:', bagDivRight.style)
+            // console.log('bagDivRight:', bagDivRight.style)
             bagDivRight.style.display = "block";
         }
         count++;
-        // containBag.append(div);
+        
         });
-        //make div
+    }
+    
+
+        // mehtab adding add to fav
+     
+
+   var favData = JSON.parse(localStorage.getItem("fashion_fav"))
+    if( favData!==null && favData.length!==0){
+        
+        let parent= document.getElementById("favP")
+        let fav= JSON.parse(localStorage.getItem("fashion_fav"));
+        let flabel = document.getElementById("flabel")
+        
+
+        function showF(){
+       
+         fav.forEach(function (el){
+            flabel.style.display="grid";
+
+         let div= document.createElement("div");
+         let img= document.createElement("img");
+         let product_price= document.createElement("p");
+         let product_name= document.createElement("p");
+         img.src = el.img;
+         product_name.textContent= el.name;
+         product_price.textContent= el.price;
+        let add_button= document.createElement("button")
+         add_button.innerText= "ADD TO BAG";
+          add_button.onclick = function(){
+            addtoBag(el);
+           };
+         div.append(img, product_name, product_price,add_button)
+         parent.append(div);
+        
+           
+        });
+     }
+ 
+             showF();
+    
+    }
+  
+
+
+      
 
         
-    }
 
 </script>
