@@ -106,21 +106,21 @@
     //suggestion products list
     var productsSug = [
         {
-            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_3_JP_EA_11-30-21_13_559604_WhiteBlue_P_PLUS_0728_CROP_NT_NT.jpg?v=1568334418",
+            img:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_3_JP_EA_11-30-21_13_559604_WhiteBlue_P_PLUS_0728_CROP_NT_NT.jpg?v=1568334418",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Sparkle And Shine Rhinestone Bodystocking - Black",
             price:400,
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         },
         {
-            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-13-21Studio5_SN_KJ_14-21-10_54_21JPS05CV26_Blackcombo_7063_KS_360x.jpg?v=1629408809",
+            img:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-13-21Studio5_SN_KJ_14-21-10_54_21JPS05CV26_Blackcombo_7063_KS_360x.jpg?v=1629408809",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Basketball bunny Babe 5 Piece Costume Set - White/Blue",
             price:400,
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         },
         {
-            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-24-21Studio5_MS_KP_14-48-10_50_21JPS053075_Orangecombo_4203_PLUS_PB.jpg?v=1629850310",
+            img:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-24-21Studio5_MS_KP_14-48-10_50_21JPS053075_Orangecombo_4203_PLUS_PB.jpg?v=1629850310",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Dragon Ninja 3 Piece Costume Set - Black/Red",
             price:400,
@@ -131,21 +131,21 @@
     //recommended products list
     var productsRecommend = [
         {
-            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/09-15-21Halloween_SN_16-51-19_LOOK_5_3427_PB_DM_PLUS.jpg?v=1631925248",
+            img:"https://cdn.shopify.com/s/files/1/0293/9277/products/09-15-21Halloween_SN_16-51-19_LOOK_5_3427_PB_DM_PLUS.jpg?v=1631925248",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Sparkle And Shine Rhinestone Bodystocking - Black",
             price:400,
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         },
         {
-            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/06-22-20Studio3_CE_MJ_09-57-16_3_D4568A_Blush_P_0013_PLUS_NT.jpg?v=1592855451",
+            img:"https://cdn.shopify.com/s/files/1/0293/9277/products/06-22-20Studio3_CE_MJ_09-57-16_3_D4568A_Blush_P_0013_PLUS_NT.jpg?v=1592855451",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Basketball bunny Babe 5 Piece Costume Set - White/Blue</P>",
             price:400,
             innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
         },
         {
-            imgsrc:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_3_JP_EA_11-30-04_13_559604_WhiteBlue_P_PLUS_0720_NT_NT.jpg?v=1568334418",
+            img:"https://cdn.shopify.com/s/files/1/0293/9277/products/08-20-19_Studio_3_JP_EA_11-30-04_13_559604_WhiteBlue_P_PLUS_0720_NT_NT.jpg?v=1568334418",
             title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
             name:"Dragon Ninja 3 Piece Costume Set - Black/Red",
             price:400,
@@ -181,8 +181,8 @@
             div.innerHTML = null;
 
             let image = document.createElement("img");
-            image.src = prod.imgsrc;
-            console.log('productsList[img]:', prod.imgsrc)
+            image.src = prod.img;
+            console.log('productsList[img]:', prod.img)
             image.setAttribute("class", "imgAnd");
             image.setAttribute("id","myImg");
 
@@ -288,7 +288,7 @@
         
         let img = document.createElement("img");
         img.setAttribute("class", "selectedImg");
-        img.src = prod.imgsrc;
+        img.src = prod.img;
         
 
         let imgDetail = document.createElement("img");

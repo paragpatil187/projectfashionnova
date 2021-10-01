@@ -1,4 +1,4 @@
-var x= "$20"
-var y= "$30"
-var sum = +x + +y
-console.log(sum)
+var x= "20"
+type of x is string 
+type of +x is number
+
