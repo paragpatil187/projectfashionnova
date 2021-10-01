@@ -70,7 +70,7 @@ let userDetails = JSON.parse(localStorage.getItem("user_details"));
 userDetails.push(user_details);    
 
 localStorage.setItem("user_details", JSON.stringify(userDetails));
-localStorage.setItem("temp_user_details", JSON.stringify(userDetails));
+localStorage.setItem("temp_user_details", JSON.stringify(userDetails[userDetails.length-1]));
 
 console.log('user_details:', userDetails)
 window.location.href = "landingpage.html";

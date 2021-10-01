@@ -43,9 +43,9 @@ function check(event){
 
     for (let index = 0; index < user_details.length; index++) {
         if((user_details[index].email == email) && (user_details[index].password == password)){
-
-            // alert("This one is Already exists in the cart");
-            localStorage.setItem("temp_user_details", JSON.stringify(user_details));
+        
+         
+            localStorage.setItem("temp_user_details", JSON.stringify(user_details[index]));
             window.location.href = "landingpage.html";
             return;
         }

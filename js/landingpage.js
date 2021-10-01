@@ -101,17 +101,16 @@ function  showFavouriteProducts(){
          product_price.textContent= el.price;
          let add_button= document.createElement("button")
          let fav_button= document.createElement("button")
-         fav_button.textContent=  "Favourites";
-         add_button.style.height="50px"
-          fav_button.style.border="3px solid black"
-         fav_button.style.width="51%"
+         fav_button.textContent=  "💗";
+        fav_button.style.border="none"
+         fav_button.style.width="10%"
          fav_button.style.height="40px"
          fav_button.style.float="right" 
          fav_button.style.marginTop="-50px"
          fav_button.style.marginRight="20px"
-          fav_button.style.backgroundColor="red"
-         fav_button.style.color="white"
+          fav_button.style.backgroundColor="white"
          fav_button.onclick = function(){
+          
           
           addtofav(el);
         }
@@ -149,17 +148,17 @@ function showTrendProducts(){
          product_price.textContent= el.price;
          let add_button= document.createElement("button")
          let fav_button= document.createElement("button")
-         fav_button.textContent=  "Favourites";
-         fav_button.style.border="3px solid black"
-         fav_button.style.width="51%"
+         fav_button.textContent=  "💗";
+        fav_button.style.border="none"
+         fav_button.style.width="10%"
          fav_button.style.height="40px"
          fav_button.style.float="right" 
          fav_button.style.marginTop="-50px"
          fav_button.style.marginRight="20px"
-         fav_button.style.backgroundColor="red"
-         fav_button.style.color="white"
+          fav_button.style.backgroundColor="white"
          add_button.style.height="50px"
          fav_button.onclick = function(){
+          
           
           addtofav(el);
         }

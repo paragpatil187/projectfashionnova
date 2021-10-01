@@ -4,7 +4,9 @@
     function confirm(e){
         e.preventDefault();
         //this will remove the temporary user fom the local storage to prevent autofilling the nextuser account with the current user
-        localStorage.removeItem("temp_user_details");
+        
+        localStorage.removeItem("fashion_cart");
+        localStorage.removeItem("fashion_fav");
         setTimeout(function(){
         out.textContent="Payment succesful!"; }, 2000);
         setTimeout(function(){
