@@ -25,7 +25,7 @@
       background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/09-09-20Studio3_AP_SA_09-19-21_7_85401_BlackRed_P_0580_PLUS_WG_468x.jpg?v=1599671713"
     },
     {
-      name: "Basketball Bunny Babe 5 Piece Costume Set - White/Blue",
+      name: "Basketball Bunny Babe 5 Piece - White/Blue",
       color: " White/Blue",
      price: "48.99",
       title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
