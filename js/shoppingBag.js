@@ -248,7 +248,7 @@ function showfromBag(){
     let priceDiv = document.createElement("div");
     priceDiv.setAttribute("class", "priceDiv");
         let tem ="";
-        tem = tem + "<strike><span>$</span>" + (Math.floor(+prod.price) +15.99) +"<span>USD</span></strike>";
+        tem = tem + "<strike><span>$</span>" + (Math.floor(+prod.price) + 15 + 0.99) +"<span>USD</span></strike>";
         let p1 = document.createElement("p");
         p1.innerHTML = tem;
 
@@ -347,7 +347,7 @@ if( favData!==null && favData.length!==0){
      let product_name= document.createElement("p");
      img.src = el.img;
      product_name.textContent= el.name;
-     product_price.textContent= "$" + el.price + " USD";
+     product_price.textContent= "$" + Math.floor(el.price) + " USD";
     let add_button= document.createElement("button")
      add_button.innerText= "ADD TO BAG";
       add_button.onclick = function(){
@@ -366,12 +366,13 @@ if( favData!==null && favData.length!==0){
 function validate(){
 var code = document.getElementById("discount");
 var out = document.getElementById("confirmation")
-if(code.value=="masai30"){
-  out.textContent= "30% discount applied";
+if(code.value=="masai50"){
+  out.textContent= "50% discount";
+  out.style.color="green";
   let sum = document.getElementById("sum");
-    sum.innerText = "$ " + (Math.floor(0.7* +total))+ " USD";
+    sum.innerText = "$ " + Math.floor((1/2)* +total) + " USD";
     var obj={}
-    obj.totalprice= (Math.floor(0.7*+total));
+    obj.totalprice= (Math.floor((1/2)*+total));
     localStorage.setItem("total", JSON.stringify(obj))
 
 
@@ -381,4 +382,13 @@ else{
   out.textContent="Invalid Code"
   out.style.color="red";
 }
+}
+
+
+function removeitems(){
+    localStorage.removeItem("fashion_cart");
+    window.location.href="shopingBag.html"
+    let x= document.getElementById("rmvbtn");
+    x.style.color="white";
+
 }
