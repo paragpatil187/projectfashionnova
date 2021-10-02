@@ -4,6 +4,33 @@ let data = [
     "Track your order"
 ];
 
+let my_products = JSON.parse(localStorage.getItem("fashion_cart"));
+
+ if(my_products.length > 0){
+  var bag= document.getElementById("shoppingbag");
+  bag.style.color="white";
+ }
+ let my_favourites = JSON.parse(localStorage.getItem("fashion_fav"));
+ 
+ if(my_favourites.length > 0){
+  
+   var heart= document.getElementById("heart");
+   heart.style.color="red";
+ }
+
+ let my_user = JSON.parse(localStorage.getItem("temp_user_details"));
+
+
+ if(my_user.length==undefined){
+   let user= document.getElementById("user");
+   user.style.color="white";
+   user.title="Sign out"
+   user.onclick= function(){
+    localStorage.removeItem("temp_user_details");
+   }
+
+
+   }
 let container = document.getElementById("sliding");
 startSlidshow();
 function startSlidshow() {
@@ -73,5 +100,5 @@ localStorage.setItem("user_details", JSON.stringify(userDetails));
 localStorage.setItem("temp_user_details", JSON.stringify(userDetails[userDetails.length-1]));
 
 console.log('user_details:', userDetails)
-window.location.href = "landingpage.html";
+window.history.back();
 }

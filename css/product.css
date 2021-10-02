@@ -366,3 +366,22 @@ button{
 /* javascript functions css */
 .active {background:rgba(192, 192, 192, 0.993)}
 .sticky {position: fixed;top: 0;width: 100%}
+
+@media (max-width: 700px){
+    .footer{
+        display: none;
+    }
+    .navbar{
+      display: none;
+    }
+    .logotab{
+      display: none;
+    }
+    #top{
+      display: none;
+    }
+    button{
+      height: 70px;
+    }
+  
+  }

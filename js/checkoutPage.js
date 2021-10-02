@@ -1,5 +1,6 @@
  // right side products
-
+ 
+ 
  let parent= document.getElementById("productdetails")
  let cart= JSON.parse(localStorage.getItem("fashion_cart"));
 
@@ -17,7 +18,7 @@ cart.forEach(function (el){
   img.src = el.img;
   img.id="pimg"
    product_name.textContent= el.name;
-   product_price.textContent= el.price;
+   product_price.textContent= "$" + el.price +" USD";
    det.append(product_name, product_price);
    det.float="right"
    det.style.marginLeft="100px"
@@ -34,7 +35,7 @@ showProducts();
 
 let total= JSON.parse(localStorage.getItem("total"));
 var totalprice = document.getElementById("totalamount")
-totalprice.textContent= "Total price: $" + total.totalprice + " USD";
+totalprice.textContent= "Total price: $" + Math.floor(total.totalprice) + " USD";
 
 
 

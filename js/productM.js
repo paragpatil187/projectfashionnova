@@ -36,18 +36,17 @@
 
 
    }
-
       
 
        //this following function is pushing the data to cart object in local storage
 
        var data = 
       [ {
-        name: "Marilyn High Waisted Skinny Jeans - Light Wash",
+        name: "Jackson Plaid Overcoat - Tan/Multi",
         color: "light-wash",
-        productlink: "product.html",
-        price: "27.99",
-        img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_468x.jpg?v=1587588026",
+        productlink: "productM.html",
+        price: "41.99",
+        img: "https://cdn.shopify.com/s/files/1/0293/9277/products/10-02-19_Studio_4_RG_RE_15-11-13_72_OMJ20240A_TanMulti_5188_WG_468x.jpg?v=1570233668",
         background_img: "https://cdn.shopify.com/s/files/1/0293/9277/products/MarilynHighWaistedSkinnyJeans-LightWash_MER_bba19deb-2873-40b2-9db7-6bdcf751f5ce_468x.jpg?v=1604518599"
       } ]
 

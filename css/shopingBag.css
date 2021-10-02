@@ -52,11 +52,16 @@ h1{
          
 }
 .shoppingBag > div:nth-child(1){
-    width: 30%;
-    box-sizing: border-box;
-    padding-top: 25px;
+    padding-top: 12px;
+    width: 20px;
 }
 .shoppingBag > div:nth-child(2){
+    width: 30%;
+    box-sizing: border-box;
+    padding-top: 15px;
+    /* border: 1px solid red; */
+}
+.shoppingBag > div:nth-child(3){
     width: 70%;
 }
 a{
@@ -87,7 +92,7 @@ a{
 }
 .bagContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     width: 96%;
     margin: auto;
@@ -206,7 +211,7 @@ a{
     margin-left: 20px;
 }
 .imgDetail{
-    width: 650px;
+    width: 80%;
     height: 170px;
     margin-top: 20px;
     margin-left: 10px;
@@ -298,10 +303,349 @@ button{
     margin-left: 30px;
 }
 .upDiv p:nth-child(2){
-    margin-left: 450px;
+    margin-left: 115%;
     
 }
 .upDiv p:nth-child(3){
-    margin-left: 100px;
+    margin-left: 30%;
     
 }
+
+
+#favP{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    width: 100%;
+    grid-gap: 10px;
+    justify-content: center;
+}
+#favP div{
+    margin-top: 30px;
+}
+#favP div button{
+    width: 80%;
+}
+
+.footer{
+    background-color: black;
+    height: 300px;
+    color: white;
+    width: 100%;
+}
+.left{
+    float: left;
+}
+.middle{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 40%;
+    padding: 30px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    font-size: larger;
+    color: gray;
+    margin-top: 0px;
+}
+ table .head{
+     color:white;
+
+ }
+ .right{
+     
+     
+     color: white;
+     margin-top: 40px;
+    
+ }
+ .socialmedia a{
+     color: gray;
+     margin-left: 44px;
+     text-decoration: none;
+     height: 30px;
+
+ }
+ .right input{
+     width: 24%;
+     margin-left: 50px;
+     height: 44px;
+     
+ }
+ .logotab{
+    /* margin-top: 100px; */
+    height: 60px;
+    background-color: rgb(20, 20, 20);
+    
+    
+    }
+    
+    
+                                         /* logo customisation */
+    .logotab .logo{
+    height: 65px;
+    width: 150px;
+    float: left;
+    margin-left: 3%;
+    }
+    .content{
+    margin-top:  20px;
+    }
+    #searchbar{
+    margin-left: 450px;
+    margin-top: 14px;
+    width: 350px;
+    height: 50%;
+    border-radius:25px;
+    font-size: 15px;
+    
+    }
+                            /* icons are here to customise */
+    .topicons{
+    
+     margin-left:1150px;
+     margin-top: -60px;
+     color: grey;
+     
+     
+     
+     }
+     .topicons i,a{
+     
+     margin-left: 20px;
+     color: grey;
+     
+     
+     
+     } 
+     .topicons i:hover{
+       color: aliceblue;
+     }  
+     *{
+        font: 400 14px/20px,Arial,sans-serif;
+        
+         letter-spacing: .3px;
+      }
+      .header{
+          
+          /* background-color: black; */
+          width: 100%;
+          margin: -7px -5px -5px -5px;
+         
+          
+          
+      }
+    
+      
+    .likeNav{
+        background-color: black;
+        height: 45px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding-top: 1px;
+        display: flex;
+        /* box-sizing: border-box; */
+    }
+    .likeNav > div{
+        width: 5%;
+        /* border: 1px solid white; */
+        align-items: center;
+        padding-top: 10px;
+    }
+    #sliding{
+        width: 90%;
+        /* border: 1px solid white; */
+        padding-top: 0px;
+    }
+      .header #topNavigation{
+          height: 45px;
+          width: 100%;
+          background-color: silver;
+          /* margin-top: 20px; */
+          
+    
+      }
+     
+    
+    .header #topNavigation ul{
+    
+    height: 43px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    
+    }
+    
+    .nav li {
+    float: left;
+    list-style-type: none;
+    
+    
+    
+    }
+    
+    .nav li a{
+    border-right: 0.5px solid #bbb;
+    display: block;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    padding: 12px 16px;
+    text-decoration: none;
+    }
+    #currencySelect{
+    list-style-type: none;
+    
+    
+    margin-right: 20px;
+    margin-top: -30px;
+    width: -20px;
+    text-decoration: none;
+    
+    
+    
+    }
+    select{
+    
+    width: 65px;
+    }
+    
+    
+    
+    .nav li a:hover {
+    font-weight:900;
+    background-color: #111;
+    color:purple;
+    } 
+    .logotab{
+    /* margin-top: 100px; */
+    height: 60px;
+    background-color: rgb(20, 20, 20);
+    
+    
+    }
+    
+    
+                                           /* logo customisation */
+    .logotab .logo{
+    height: 65px;
+    width: 150px;
+    float: left;
+    margin-left: 3%;
+    }
+    .content{
+    margin-top:  20px;
+    }
+    #searchbar{
+    margin-left: 450px;
+    margin-top: 14px;
+    width: 350px;
+    height: 50%;
+    border-radius:25px;
+    font-size: 15px;
+    
+    }
+                              /* icons are here to customise */
+    .topicons{
+    
+    margin-left:1150px;
+    margin-top: -40px;
+    color: grey;
+    
+    
+    
+    }
+    
+    .topicons i,a{
+    
+    margin-left: 20px;
+    color: grey;
+    
+    
+    
+    }
+    .topicons i:hover{
+        color: aliceblue;
+      } 
+                /* navigation bar */
+    .navbar {
+    overflow: hidden;
+    float: left;
+    margin-left: 40px;
+    
+    
+    }
+    
+    /* Links inside the navbar */
+    .navbar a {
+    
+    margin-left: 20px;
+    font-size: 18px;
+    color:  black;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: underline;
+    }
+    @media (max-width: 700px){
+        .footer{
+            display: none;
+        }
+        #moveit{
+            float: left;
+            margin-left: -200px;
+        }
+
+       
+        .shoppingBag{
+            display: flex;
+            flex-direction: column; 
+            width: 96%;
+            margin: auto;
+            padding-left: 250px;
+            text-align: center;
+            /* border: 1px solid red; */
+            /* background-color: red; */
+        }
+        .shoppingBag > div:nth-child(1){
+            
+            display: none;
+        }
+        .shoppingBag > div:nth-child(3){        
+            display: none;
+        }
+        
+        #bagDiv{
+            /* background-color: yellow; */
+            /* border: 1px solid red; */
+            /* width: 96%; */
+            display: flex;
+            flex-direction: column;
+        }
+        #selectedProd{
+            width: 600px;
+            /* border: 1px solid black; */
+            
+        }
+        #container{
+            width: 610px;
+            /* border: 1px solid blue; */
+            height: 330px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: none;
+            margin-top: 30px;
+        }
+        input{
+            width: 350px;
+            height: 38px;
+        }
+        button{
+            height: 40px;
+            border-radius: 0px;
+            background-color: black;
+            width: 200px;
+            color: white;
+        }
+    }

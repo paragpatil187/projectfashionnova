@@ -248,12 +248,12 @@ function showfromBag(){
     let priceDiv = document.createElement("div");
     priceDiv.setAttribute("class", "priceDiv");
         let tem ="";
-        tem = tem + "<strike><span>$</span>" + ((+prod.price)+15) +"<span>USD</span></strike>";
+        tem = tem + "<strike><span>$</span>" + (Math.floor(+prod.price) +15.99) +"<span>USD</span></strike>";
         let p1 = document.createElement("p");
         p1.innerHTML = tem;
 
         let p2 = document.createElement("p");
-        p2.innerText = "$" +prod.price + " USD";
+        p2.innerText = "$"+ (Math.floor( +prod.price)+ 0.99) + " USD";
 
         let p3 = document.createElement("p");
         p3.innerText="Final Price";
@@ -306,7 +306,7 @@ function showfromBag(){
     
     
     let sum = document.getElementById("sum");
-    sum.innerText = "$ " + total + " USD";
+    sum.innerText = "$ " + (Math.floor(total)+0.98) + " USD";
 
     
 
@@ -347,7 +347,7 @@ if( favData!==null && favData.length!==0){
      let product_name= document.createElement("p");
      img.src = el.img;
      product_name.textContent= el.name;
-     product_price.textContent= el.price;
+     product_price.textContent= "$" + el.price + " USD";
     let add_button= document.createElement("button")
      add_button.innerText= "ADD TO BAG";
       add_button.onclick = function(){
@@ -369,7 +369,10 @@ var out = document.getElementById("confirmation")
 if(code.value=="masai30"){
   out.textContent= "30% discount applied";
   let sum = document.getElementById("sum");
-    sum.innerText = "$ " + Math.floor(0.7* +total) + " USD";
+    sum.innerText = "$ " + (Math.floor(0.7* +total))+ " USD";
+    var obj={}
+    obj.totalprice= (Math.floor(0.7*+total));
+    localStorage.setItem("total", JSON.stringify(obj))
 
 
 }
