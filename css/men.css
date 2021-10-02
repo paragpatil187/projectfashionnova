@@ -26,6 +26,9 @@
       font-size: 15px;
       margin-left: 35%;
   }
+  strike{
+    color: red;
+  }
   .header #topNavigation{
       height: 45px;
       width: 100%;
