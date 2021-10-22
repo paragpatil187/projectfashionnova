@@ -43,7 +43,7 @@ var productsRecommend = [
     {
         img:"https://cdn.shopify.com/s/files/1/0293/9277/products/06-22-20Studio3_CE_MJ_09-57-16_3_D4568A_Blush_P_0013_PLUS_NT.jpg?v=1592855451",
         title:"30% OFF! NO CODE NEEDED # PRICES AS MARKED",
-        name:"Basketball bunny Babe 5 Piece Costume Set - White/Blue</P>",
+        name:"Basketball bunny Babe 5 Piece Costume Set - White/Blue",
         price:"300",
         innerH : "<span>   <strike>$69.99 USD</strike>  </span> $48.99 USD"
     },
@@ -167,7 +167,11 @@ function startSlidshow() {
 
 function addtoBag(prod) {
  
-    
+    // &&&&&&&&&&&&&&&& bala add this &&&&&&&&&&&&&&&&&&
+
+    alert("Success fully added to the bag")
+
+    //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
     
     // store in loacal storage
     let my_products = JSON.parse(localStorage.getItem("fashion_cart"));
@@ -240,6 +244,42 @@ function showfromBag(){
         let removeBtn = document.createElement('button');
         removeBtn.setAttribute("class","removeBtn");
         removeBtn.innerText = "Remove";
+
+        // &&&&&&&&&&&&&&& bala edit &&&&&&&&&&&&&&&&&&&&&
+        removeBtn.onclick = ()=>{
+            // alert("hai");
+            selectedProd.remove();
+            console.log(prod.img, prod.name)
+            Remove_prod(prod.img, prod.name);
+        }
+
+        function Remove_prod(imgurl, product_name){
+
+            let my_prod_for_del = JSON.parse(localStorage.getItem("fashion_cart"));            
+
+            let temporary_list = [];
+
+            my_prod_for_del.forEach( (pro) => {
+            
+                if(pro.img === imgurl){
+                    console.log('pro:', pro)
+                }else{
+                    temporary_list.push(pro)
+                    
+                }
+                // 
+
+            } )
+
+            console.log('temporary_list:', temporary_list)
+
+            localStorage.setItem("fashion_cart", JSON.stringify( temporary_list ));
+
+        }
+
+        
+
+        //&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
         aTag.append(removeBtn)
 
