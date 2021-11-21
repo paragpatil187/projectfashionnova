@@ -596,3 +596,59 @@ width: 100%;
   }
 
 }
+@media (max-width: 700px){
+  .footer{
+      display: none;
+  }
+  .navbar{
+    display: none;
+  }
+  .logotab{
+    display: none;
+  }
+  #top{
+    display: none;
+  }
+  button{
+    height: 70px;
+  }
+  .header{
+    display: none;
+  }
+  video{
+    height:auto;
+  }
+  .banner{
+    margin-top:-20px
+  }
+  img{
+    width:500px;
+    height:auto;
+    }
+    .shopMore{
+      display: none;
+    }
+    button{
+      width:auto;height:auto;
+      font-size:2px;
+    }
+    #favoriteProducts{
+      display: none;
+
+    }
+    #trendingProducts{
+      margin-top:20px;
+      padding:5px;
+      display: block;
+    }
+  
+    #trendingProducts div img{
+      margin-top:100px;
+      height:auto
+    
+    }
+
+
+
+
+}
