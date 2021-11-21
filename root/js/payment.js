@@ -50,7 +50,7 @@ showProducts();
         setTimeout(function(){
         out.textContent="Payment succesful!"; }, 2000);
         setTimeout(function(){
-        window.location.href = "landingpage.html";; }, 4000);
+        window.location.href = "index.html";; }, 4000);
          }
 
 
