@@ -54,11 +54,11 @@ Fashion Nova is a US-based fast fashion retail company. The company operates onl
 
 
 ## Glimpse of our work
-![Landing-Page](https://github.com/mehtab39/projectfashionnova/blob/main/images/Screenshot%20(252).png?raw=true)
-![Men](https://github.com/mehtab39/projectfashionnova/blob/main/images/Screenshot%20(256).png?raw=true)
-![Curve](https://github.com/mehtab39/projectfashionnova/blob/main/images/Screenshot%20(257).png?raw=true)
-![Product](https://github.com/mehtab39/projectfashionnova/blob/main/images/Screenshot%20(263).png?raw=true)
-![Cart](https://github.com/mehtab39/projectfashionnova/blob/main/images/Screenshot%20(258).png?raw=true)
+![Landing-Page](https://github.com/mehtab39/projectfashionnova/blob/main/root/images/Screenshot%20(252).png?raw=true)
+![Men](https://github.com/mehtab39/projectfashionnova/blob/main/images/root/Screenshot%20(256).png?raw=true)
+![Curve](https://github.com/mehtab39/projectfashionnova/blob/main/images/root/Screenshot%20(257).png?raw=true)
+![Product](https://github.com/mehtab39/projectfashionnova/blob/main/images/root/Screenshot%20(263).png?raw=true)
+![Cart](https://github.com/mehtab39/projectfashionnova/blob/main/images/root/Screenshot%20(258).png?raw=true)
 ![Cart](https://github.com/mehtab39/projectfashionnova/blob/main/images/Screenshot%20(259).png?raw=true)
 ![Contact](https://github.com/mehtab39/projectfashionnova/blob/main/images/Screenshot%20(260).png?raw=true)
 
