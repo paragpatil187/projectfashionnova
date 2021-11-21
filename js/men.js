@@ -1,5 +1,6 @@
 
     //this function is sliding the title
+   
     function titleMarquee() {
         var titleText = document.title;
         titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
@@ -211,6 +212,7 @@
            fav_button.onclick = function(){
             
             addtofav(el);
+            alert("item added to the bag")
           }
            
   
@@ -219,8 +221,10 @@
           
            add_button.innerText= "Add to cart";
            add_button.onclick = function(){
+            alert("item added to the cart");
             
                addtoCart(el);
+               
              }
             
            div.append(img,product_title, product_name, product_price, fav_button, add_button)
@@ -261,12 +265,13 @@
            //fav_button.style.color="white"
            add_button.style.height="50px"
            fav_button.onclick = function(){
-            
+            alert("item added to your favorites");
             addtofav(el);
           }
   
            add_button.innerText= "Add to cart";
            add_button.onclick = function(){
+            alert("item added to your cart");
             
                addtoCart(el);
              }

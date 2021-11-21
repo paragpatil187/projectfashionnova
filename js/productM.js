@@ -60,6 +60,7 @@
    }
     
    function addtofav(data){
+    alert("item added to the favorites")
     var btn= document.getElementById("favB");
     btn.style.color="red";
     var heart= document.getElementById("heart");
@@ -72,7 +73,7 @@
     
        function addtocart(data){
          //this is changing the color icon
-         
+         alert("item added to the bag")
          var bag= document.getElementById("shoppingbag")
          bag.style.color="white"
            let product_cart= JSON.parse(localStorage.getItem("fashion_cart"));

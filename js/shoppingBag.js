@@ -60,6 +60,28 @@ var productsRecommend = [
 
 let container = document.getElementById("sliding");
 startSlidshow();
+
+function startSlidshow() {
+    
+    let count = 0;
+
+    let p = document.createElement("p");
+    p.innerText = data[count];
+
+    setInterval(function () {
+        count++;
+        container.innerHTML = null;
+      
+
+        if(count === data.length){
+            count = 0;
+        }
+        p.innerText = data[count];
+        container.append(p);
+        
+    },3000);
+   
+}
 //***********************************************
 var parentSug = document.getElementById("products");
 
@@ -140,27 +162,7 @@ function showprod(parent, list){
 var parentRecommend = document.getElementById("productsRecommend");
 showprod(parentRecommend, productsRecommend)
 
-function startSlidshow() {
-    
-    let count = 0;
 
-    let p = document.createElement("p");
-    p.innerText = data[count];
-
-    setInterval(function () {
-        count++;
-        container.innerHTML = null;
-      
-
-        if(count === data.length){
-            count = 0;
-        }
-        p.innerText = data[count];
-        container.append(p);
-        
-    },3000);
-   
-}
 
 
 
@@ -191,6 +193,8 @@ function showfromBag(){
 
     let beforeCon = document.getElementById("beforeCon");
         beforeCon.innerHTML = null;
+        let y = document.getElementById("rmvallbtn")
+        y.style.display="block"; 
 
     let my_products = JSON.parse(localStorage.getItem("fashion_cart"));
 
@@ -203,7 +207,8 @@ function showfromBag(){
     
 
     my_products.forEach(function(prod) {
-        let containBag = document.getElementById("bag");       
+        let containBag = document.getElementById("bag");   
+        
     
     //     let imgDetail = document.createElement('div');
     // imgDetail.innerHTML = '<div id="pricetag"> <div class="headings"> <p></p> <p>QUANTITY</p> <p>PRICE</p>  </div>  <div class="matter"> <div><p class="matterName"> name</p></div> <div> <input type="number"> <a href="">Remove</a> </div><div class="price"><p>blask</p> <p>USD</p> <p>Final Sale</p> <a href="">Move to Favorites</a> </div> </div><div class="sharecart">  <a href="">Share Your Cart</a> </div>  </div>';    
@@ -273,7 +278,9 @@ function showfromBag(){
 
             console.log('temporary_list:', temporary_list)
 
+
             localStorage.setItem("fashion_cart", JSON.stringify( temporary_list ));
+            window.location.reload();
 
         }
 
@@ -356,6 +363,7 @@ function showfromBag(){
         
         // console.log('bagDivRight:', bagDivRight.style)
         bagDivRight.style.display = "block";
+
     }
     count++;
     // containBag.append(div);
@@ -426,9 +434,9 @@ else{
 
 
 function removeitems(){
+    
     localStorage.removeItem("fashion_cart");
-    window.location.href="shopingBag.html"
-    let x= document.getElementById("rmvbtn");
-    x.style.color="white";
+    window.location.href="shopingBag.html";
+   
 
 }

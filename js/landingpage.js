@@ -184,13 +184,13 @@ function showTrendProducts(){
          add_button.style.height="50px"
          fav_button.onclick = function(){
           
-          
+          alert("item added to the favorites")
           addtofav(el);
         }
 
          add_button.innerText= "Add to cart";
          add_button.onclick = function(){
-          
+          alert("item added to the cart");
              addtoCart(el);
            }
           

@@ -649,3 +649,8 @@ table{
             color: white;
         }
     }
+
+
+    #rmvallbtn{
+        display:none;
+    }

@@ -217,6 +217,7 @@ favouriteData.forEach(function (el){
         
         }
         c++;
+        alert("item added to favorites")
         
         addtofav(el);
       }
@@ -227,6 +228,7 @@ favouriteData.forEach(function (el){
       
        add_button.innerText= "Add to cart";
        add_button.onclick = function(){
+         alert("item added to your cart successfully")
         
            addtoCart(el);
          }

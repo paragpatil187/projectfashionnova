@@ -61,6 +61,7 @@
    }
     
    function addtofav(data){
+    alert("item added to the fav")
     var btn= document.getElementById("favB");
     btn.style.color="red";
     var heart= document.getElementById("heart");
@@ -72,7 +73,8 @@
         
     
        function addtocart(data){
-         //this is changing the color icon
+         //this is changing the color icon;
+           alert("item added to the bag")
          
          var bag= document.getElementById("shoppingbag")
          bag.style.color="white"
