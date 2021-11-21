@@ -13,7 +13,7 @@ This is the clone of [Fashion Nova](www.fashionnova.com). We started this projec
 
 ## How to run the app
 * Clone the repository "https://github.com/mehtab39/projectfashionnova"
-* From the root folder right click on index,html and copy path
+* From the root folder right click on index.html and copy path
 * Now go to browser and paste the copied path and press enter
 * The app is ready to run
 
