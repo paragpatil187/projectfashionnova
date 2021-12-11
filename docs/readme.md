@@ -1,4 +1,4 @@
-> This is the clone of [Fashion Nova](www.fashionnova.com). We started this project as a four member team during construct week organised at Masai School, Bengaluru, Karnataka.<
+> This is the clone of [Fashion Nova](www.fashionnova.com). We started this project as a four member team during construct week organised at Masai School, Bengaluru, Karnataka.
 
 ## Table of contents
 
@@ -19,7 +19,7 @@
 
 ## Basic inference about the company
 
-Fashion Nova is a US-based fast fashion retail company. The company operates online and has five brick-and-mortar locations. The company is known to use Instagram to gain earned media for its clothing by interacting with users and generating publicity through a mix of models, celebrities, and other customers.
+>Fashion Nova is a US-based fast fashion retail company. The company operates online and has five brick-and-mortar locations. The company is known to use Instagram to gain >earned media for its clothing by interacting with users and generating publicity through a mix of models, celebrities, and other customers.
 
 ## Frameworks Used
 * Javascript
