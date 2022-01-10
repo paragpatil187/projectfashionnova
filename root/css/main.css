@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	margin:0; 
+	background-image:url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: #000;	
+    background-size: cover;
+}
+
+.sitecontainer {
+	width: 980px;
+	height: 1200px;
+	margin: 40px auto 40px auto;
+   
+}
+
+
+header {
+    margin-top: 10px;
+	width: 980px;
+	height: 165px;
+ 
+}
+ul{
+    
+    color:white;
+}
+
+.logobox {
+    width: 495spx;
+    height: 80px;
+    float: left;
+    
+}
+
+nav {
+    margin-top:auto;
+    margin-left: 175px;
+    width: 485px;
+    height: 43px;
+    line-height: 62px;
+    float: right;
+    margin-top: auto;
+    text-align: center;
+    font-size: 24px;
+    font-family: arial;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 15px 0px 15px;
+}
+
+nav a:hover {
+    color: red;
+}
+.cast{
+    
+    background-color: black;
+    width: 980px;
+	height: 585px;
+    margin-bottom: 15px;
+}
+
+.featuredsection {
+	width: 980px;
+	height: 316px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mainbody {
+	width: 980px;
+	height: 585px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+
+}
+
+
+.leftcolumn {
+	width: 594px;
+	height: 519px;
+	background-color: black;
+	float:left;
+    color: white;
+	
+}
+h1{
+      margin-top: 15px;
+    color: white;
+    
+    
+    text-align: center;
+    font-weight: 36pt;
+}
+p{
+     margin-top: 10px;
+    
+    text-align: center;
+    font-weight: 14pt;
+}
+
+
+
+ 
+
+.rightcolumn {
+	width: 345px;
+	height: 519px;
+	background-color: black;
+	float: right;
+}
+.rightcolumn img {
+    margin: 4px;
+}
+
+
+footer {
+   
+	width: 980px;
+	height: 64px;
+	background-color: rgba(0,0,0,.75);
+	line-height: 64px;
+	text-align: center;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+ 

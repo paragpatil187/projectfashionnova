@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,7 @@
     <link rel = "icon" href = 
     "https://everipedia-storage.s3.amazonaws.com/ProfilePics/fashion-nova__20609.jpeg" 
             type = "image/x-icon">
-            <link rel="stylesheet" href="landingpage.css">
+            <link rel="stylesheet" href="css/curve.css">
     
      
 </head>
@@ -29,7 +30,7 @@
         
         <ul class="nav">
            
-            <li><a href="landingpage.html">WOMEN</a></li>
+            <li><a href="index.html">WOMEN</a></li>
             <li><a href="curve.html">CURVE</a></li>
             <li><a href="men.html">MEN</a></li>
             <li><a href="#">KIDS</a></li>
@@ -47,12 +48,10 @@
 
         <!-- icons icons icons icons -->
         <div class="topicons">
-          <i style="font-size:40px" class="fa">&#xf06e;</i>
-          <i id="heart" style="font-size:40px" class="fa">	&#xf004;</i>
-         
-          <i style="font-size:40px" class="fa fa-user"  aria-hidden="true"></i>
-          <i style="font-size:40px" class="fa fa-shopping-bag" aria-hidden="true"></i>
-          <p id="countFav"></p>
+          <a href="shopingBag.html" title=" Wishlist"><i style="font-size:40px" class="fa">&#xf06e;</i></a>
+          <a href="shopingBag.html" title="Favorites">  <i id="heart" style="font-size:40px" class="fa">	&#xf004;</i></a>
+          <a href="login.html"  title="Sign In"><i id="user"style="font-size:40px"  class="fa fa-user"  aria-hidden="true"></i></a>
+          <a href="shopingBag.html" title="Your cart"><i style="font-size:40px" id="shoppingbag" class="fa fa-shopping-bag" aria-hidden="true"></i></a>
         </div>
        
     </div>
@@ -66,7 +65,7 @@
             <div class="line">
                 <ul>
                     <h1 style="font-size: 30px">Shop All</h1>
-                    <a><li>New in jeans</li></a>
+                    <a href="product.html" style="background-color: inherit"><li>New in jeans</li></a>
                     <a><li>FN Favorite jeans</li></a>
                     <a><li>Jeans starting at $12</li></a>
                     <a><li>Plus size jeans</li></a>
@@ -176,10 +175,18 @@
            
 
             <div class="dropdown">
-                <button class="dropbtn">MORE
-                  <i class="fa fa-caret-down"></i>
-                </button>
-             </div>
+              <button class="dropbtn">MORE
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div  style="width: 300px; height: 200px; text-align: underline; background-color: inherit;" class="dropdown-content">
+             
+                <ul  style="text-align: underline; background-color: inherit;">
+                    <h1 style="font-size: 30px">Men jacket available</h1>
+                    <a href="productM.html"><li style="text-align: underline; background-color: inherit;">Overcoat</li></a>
+                  </ul>
+                
+              </div>
+           </div>
 
           </div>
       </div>
@@ -196,56 +203,107 @@
           </h1></marquee>
         
       </div>
-      <div style="margin-top: -19px"   class="video" >
-          <a href="landingpage.html"><video width="100%" height="580" autoplay loop muted>
-            <source src="https://cdn.shopify.com/s/files/1/0293/9277/files/WEB_BANNER_COPY.mp4?v=1632183104" type="video/mp4" />
-          </video></a>
-         
-         
-          
-      </div>
+      
 
    </div>
 
+
    <!-- content boundry begins -->
+   
+   <div id="container">
+        <div id="imgbox1">
+            <img class="firstimage" src="https://cdn.shopify.com/s/files/1/0293/9277/collections/collectionbanner_halloween_d21be0e1-53e1-4ba4-8d8e-9e2d7c452ff5.jpg?v=1632163611"/>
+        </div>
+        <!-- <div id="imgbox2">
+            <img class="mainimg" src="https://cdn.shopify.com/s/files/1/0293/9277/files/mobile_newarrivals_1_700x.jpg?v=1632274988"/>
+        </div> -->
+        <div id="boxdiv">
+            <h1>WE JUST LAUNCHED AFTERPAY</h1>
+        <h2>GET WHAT YOU WANT, WHEN YOU WANT IT.</h2>
+        <P>Choose Afterpay at checkout to shop now and pay later in just 4 interest-free payment! <br> No fees when you pay on time. </P>
+        </div>
+        <div class="imgbox">
+            <img class="mainimg" src="https://www.ifluenz.com/blog/wp-content/uploads/2018/12/FashionNova-influencers.jpg"/>        
+        </div>
+        
+        
+        <!-- <div>
+            <img class="mainimg" src="https://i.ytimg.com/vi/Lh5l0oC6MKQ/maxresdefault.jpg"/>
+        </div> -->
+        <h1>Shop More</h1>
+        <div id="shopmore">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0293/9277/files/grid_banners_tops_250x.jpg?v=1632275419"/>
+                <h3 class="shopmoretext">TOPS</h3>
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0293/9277/files/grid_novaessentials_update_250x.jpg?v=1631299381"/>
+                <h3 class="shopmoretext">NOVA ESSENTIAL</h3>
 
-   <div class="content">
-       <div class="newarrival">
-         <a href="landingpage.html" ><img src="https://cdn.shopify.com/s/files/1/0293/9277/files/desktop_newarrivals_1_96b97095-27d4-4326-87bb-dde05959ee9d.jpg?v=1632274994" height="600px"></a> 
-       </div>
-       <div  style="margin-top: 10px" class="zipbanner">
-        <a><img src="https://cdn.shopify.com/s/files/1/0293/9277/files/fashionnova_afterpay_desktop_banner.jpg?v=1631581009" height="200px"></a>
-    </div>
-    <div  style="margin-top: 10px" class="JUMPSUITS">
-        <a><img src="https://cdn.shopify.com/s/files/1/0293/9277/files/desktop_jeans_6.jpg?v=1632275105" height="600px"></a>
-    </div>
-    <h1 style="text-align: center; font-weight: bold; font-size: 30px;">SHOP MORE</h1>    
-    <div class="shopMore">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0293/9277/files/grid_bannersbottoms_250x.jpg?v=1632275452"/>
+                <h3 class="shopmoretext">BOTTOMS</h3>
+            </div>
+           
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0293/9277/files/grid_saleonsale_3_250x.jpg?v=1632254023"/>
+                <h3 class="shopmoretext">SALE</h3>
+            </div>
 
-         <div>
-           <a href="landingpage.html"><img src="https://cdn.shopify.com/s/files/1/0293/9277/files/grid_tops_3.jpg?v=1632275207" height="510px"></a>
-                       <a href="landingpage.html"><h2 style="text-align: center; font-weight: bold; font-size: 20px;text-decoration: underline;  color: black;">TOPS</h2></a>
-         </div>
-         <div>
-                   <a href="landingpage.html">  <img src="https://cdn.shopify.com/s/files/1/0293/9277/files/grid_novaessentials_update.jpg?v=1631299381" height="510px"></a>
-                      <a href="landingpage.html"><h2 style="text-align: center; font-weight: bold; font-size: 20px;text-decoration: underline;  color: black;">NOVA ESSENTIAL</h2></a>
-         </div>
-         <div>
-                   <a href="landingpage.html">  <img src="https://cdn.shopify.com/s/files/1/0293/9277/files/grid_bottoms_3.jpg?v=1632275238" height="510px"></a>
-                      <a href="landingpage.html"><h2 style="text-align: center; font-weight: bold; font-size: 20px; text-decoration: underline;  color: black;">BOTTOM</h2></a>
-         </div>
-         <div>
-                   <a href="landingpage.html">  <img src="https://cdn.shopify.com/s/files/1/0293/9277/files/grid_saleonsale_3.jpg?v=1632254023" height="510px"></a>
-                     <a href="landingpage.html"><h2 style="text-align: center; font-weight: bold; font-size: 20px; text-decoration: underline; color: black;">SALE</h2></a>
-         </div>
-    </div>
-    <div  style="margin-top: 60px" class="zipbanner">
+        </div>
+        <h1>Shop Looks From Our 'Gram</h1>
+        <div id="shoplook">
+            <div class="cont1">
+              <img src="https://cdn-yotpo-images-production.yotpo.com/instagram/92/17929550995687392/standard_resolution.jpg"/>
+              <button class="btn1">SHOP IT</button>
+            </div>
+            <div class="cont1">
+                <img src="https://cdn-yotpo-images-production.yotpo.com/instagram/7/17885674160512307/standard_resolution.jpg"/>
+                <button class="btn1">SHOP IT</button>
+            </div>
+            <div class="cont1">
+                <img src="https://cdn-yotpo-images-production.yotpo.com/instagram/34/17904007301084934/standard_resolution.jpg"/>
+                <button class="btn1">SHOP IT</button>
+            </div>
+            <div class="cont1">
+                <img src="https://cdn-yotpo-images-production.yotpo.com/instagram/98/18170646913089698/standard_resolution.jpg"/>
+                <button class="btn1">SHOP IT</button>
+              </div>
+            <div class="cont1">
+                <img src="https://cdn-yotpo-images-production.yotpo.com/instagram/12/18253639339041612/standard_resolution.jpg"/>
+                <button class="btn1">SHOP IT</button>
+            </div>
+            <div class="cont1">
+                <img src="https://cdn-yotpo-images-production.yotpo.com/instagram/60/17884017362416260/standard_resolution.jpg"/>
+                <button class="btn1">SHOP IT</button>
+            </div>
+            <div class="cont1">
+                <img src="https://cdn-yotpo-images-production.yotpo.com/instagram/59/17923392202752759/standard_resolution.jpg"/>
+                <button class="btn1">SHOP IT</button>
+            </div>
+            <div class="cont1">
+                <img src="https://cdn-yotpo-images-production.yotpo.com/instagram/32/18008414992347632/standard_resolution.jpg"/>
+                <button class="btn1">SHOP IT</button>
+            </div>
+        </div>
+        
+    <div id="zipbanner">
       <a><img src="https://cdn.shopify.com/s/files/1/0293/9277/files/fashionnova_zip_banner_blackwhite.png?v=1629140581" height="200px"></a>
   </div>
-     <h1 style="margin-left: 25px;">CUSTOMER FAVORITES</h1>
+     <h1>CUSTOMER FAVORITES</h1>
+     
+     
+     <button id="highlow1" class="sortingbtn" onclick="sortHL1()"> sort Price high to low</button>
+    <button id="lowhigh1" class="sortingbtn" onclick="sortLH1()"> &nbsp;sort Price&nbsp; low to high</button>
+
+    
      <!-- javascript will do this part -->
   <div id="favoriteProducts"></div>
-  <h1 style="margin-left: 25px;">TRENDING IN</h1>
+  <h1>TRENDING IN</h1>
+     <button id="highlow" class="sortingbtn" onclick="sortHL()">sort Price high to low</button>
+     <button id="lowhigh" class="sortingbtn" onclick="sortLH()"> &nbsp;sort Price&nbsp; low to high</button>
+  
   <div id="trendingProducts"></div>
      <!-- Thanks javascript -->
     
@@ -317,7 +375,7 @@
            &nbsp;
            <h2 style="margin-top: 10px;margin-left: 10px; "> SIGN UP FOR DISCOUNTS + UPDATES</h2>
            <input type="email" id="email" name="email" placeholder="Email Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8594;">
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8594;">
            <p style="margin-top: 10px; margin-left: 44px; font-size: 12px;">
             By signing up for email, you agree to Fashion Nova's <a href="#">Terms of Service and Privacy</a>Policy.</p>
             <div class="socialmedia">
@@ -344,6 +402,4 @@
     
 </body>
 </html>
-<script src="landingpage.js"></script>
-
-     
+<script src="js/curve.js"></script>

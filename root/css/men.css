@@ -26,6 +26,9 @@
       font-size: 15px;
       margin-left: 35%;
   }
+  strike{
+    color: red;
+  }
   .header #topNavigation{
       height: 45px;
       width: 100%;
@@ -93,9 +96,7 @@ background-color: rgb(20, 20, 20);
 
 
 }
-
-
-                                       /* logo customisation */
+/* logo customisation */
 .logotab .logo{
 height: 65px;
 width: 150px;
@@ -114,22 +115,27 @@ border-radius:25px;
 font-size: 15px;
 
 }
-                          /* icons are here to customise */
-.topicons{
+ /* icons are here to customise */
+ .topicons{
 
-margin-left:1150px;
-margin-top: -40px;
-color: grey;
-
-
-
-}
-.topicons i{
-margin-left: 30px;
-
-
-
-}
+   margin-left:1150px;
+   margin-top: -40px;
+   color: grey;
+   
+   
+   
+   }
+   .topicons i,a{
+   
+   margin-left: 20px;
+   color: grey;
+   
+   
+   
+   } 
+   .topicons i:hover{
+     color: aliceblue;
+   }  
             /* navigation bar */
 .navbar {
 overflow: hidden;
@@ -228,9 +234,10 @@ ul{
       color: black;
       font-size: 40px;
   }
+  /*
   .newarrival img:hover{
     display: none;
-  }
+  }*/
   .shopMore{
    
     margin-top: 35px;
@@ -297,19 +304,30 @@ ul{
        
    }
    #trendingProducts{
-          margin-top: 35px;
-          margin-left: 50px;
+    /*margin-top: 5%;
+    margin-left: 50px;
     display: grid;
      grid-template-columns: 23% 23% 23% 23%;
-     grid-template-rows: 430px;
+     grid-template-rows: 430px 430px;
      grid-gap: 40px;
      
-     height: 700px;
- 
-    
+     height: 1100px;
+ */
+ margin-top: 35px;
+    margin-left: 50px;
+    display: grid;
+     grid-template-columns: 20% 20% 20% 20%;
+     grid-template-rows: 600px;
+     grid-gap: 4%;
+    padding: 4%;
+
 }
+
+
 #trendingProducts div{
-  height: 600px;
+
+  height: 100%;
+  padding-top: 5%;
   
 }
 #trendingProducts div img{
@@ -327,19 +345,24 @@ height: auto;
   margin-bottom: 10px
 }
 #favoriteProducts{
-          margin-top: 35px;
-          margin-left: 50px;
+    margin-top: 35px;
+    margin-left: 50px;
     display: grid;
-     grid-template-columns: 23% 23% 23% 23%;
-     grid-template-rows: 430px;
-     grid-gap: 40px;
-     
-     height: 700px;
- 
+     grid-template-columns: 20% 20% 20% 20%;
+     grid-template-rows: 600px;
+     grid-gap: 4%;
+    padding: 4%;
+
+     /*
+     margin-bottom: 50px;
+    height: 700px;
+ */
     
 }
 #favoriteProducts div{
-  height: 600px;
+ ;
+  padding-top: 5%;
+  height: 100%;
   
 }
 #favoriteProducts div img{
@@ -349,13 +372,87 @@ height: auto;
 }
 #favoriteProducts div button{
   width: 100%;
-  background-color: black;
+ background-color: #111;
   color: white;
   height: 40px;
   font-weight: 900;
   font-size: 28px;
   margin-bottom: 10px
 }
+
+/* MEDIA QUERRY HERE */
+
+
+@media only screen and (min-width: 990px) {
+  #img1 {
+    src: 'https://cdn.shopify.com/s/files/1/0293/9277/files/10.01.21_mens_desktop_promo_3c226428-b212-4567-b935-f0ea69bd5672_900x.jpg?v=1633122730';
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  #img1 {
+    background-image: url('https://cdn.shopify.com/s/files/1/0293/9277/files/10.01.21_mens_desktop_promo_3c226428-b212-4567-b935-f0ea69bd5672_1400x.jpg?v=1633122730');
+  }
+}
+
+
+
 /* javascript functions css */
 .active {background:rgba(192, 192, 192, 0.993)}
 .sticky {position: fixed;top: 0;width: 100%}
+@media (max-width: 700px){
+  .footer{
+      display: none;
+  }
+  .navbar{
+    display: none;
+  }
+  .logotab{
+    display: none;
+  }
+  #top{
+    display: none;
+  }
+  button{
+    height: 70px;
+  }
+  .header{
+    display: none;
+  }
+  video{
+    height:auto;
+  }
+  .banner{
+    margin-top:-20px
+  }
+  img{
+    width:500px;
+    height:auto;
+    }
+    .shopMore{
+      display: none;
+    }
+    button{
+      width:auto;height:auto;
+      font-size:2px;
+    }
+    #favoriteProducts{
+      display: none;
+
+    }
+    #trendingProducts{
+      margin-top:20px;
+      padding:5px;
+      display: block;
+    }
+  
+    #trendingProducts div img{
+      margin-top:100px;
+      height:auto
+    
+    }
+
+
+
+
+}

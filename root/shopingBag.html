@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart | Fashion Nova</title>
+    
+    
+    <link rel="stylesheet" href="css/shopingBag.css">
+    <!-- <script src="shopingBag.js"></script> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="header" id="myHeader">
+
+      <a href="index.html"><div class="likeNav">
+          <div><span class="material-icons"> chevron_left</span></div>
+          <div id="sliding"> <p> Track your order </p>          </div>
+          <div><span class="material-icons">navigate_next</span></div>       
+      </div></a>  
+         <div id="topNavigation" >
+            
+            <ul class="nav">
+               
+                <li><a href="index.html">WOMEN</a></li>
+                <li><a href="curve.html">CURVE</a></li>
+                <li><a href="men.html">MEN</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">BEAUTY</a></li>
+            
+           
+             
+            </ul>
+        </div>
+
+   
+
+    <div class="homeAccount">
+        <div><a href="index.html">Home</a></div>
+        <div><span class="material-icons">navigate_next</span></div>
+        <div><span>Shopping Bag</span></div>        
+    </div>
+
+    <div class="shoppingBag">
+        <div style="width: 100%"><a href="index.html">Continue Shopping</a></div>
+        <div style="width: 80%; margin-right: 600px;"><h1 style="text-align: center; float: left; width: 300px;" id="moveit">SHOPPING BAG</h1></div>              
+    </div>
+
+    <div class="freeShipping">
+        <p>$100.00 USD FROM FREE SHIPPING! <a href="">keep shopping Bag</a></p>
+        <div class="underdiv"></div>
+    </div>
+
+    <div id="bag" class="bagContainer">
+        <div style="width: 100%" id="beforeCon" class="beforeCon">
+            <p>Your shopping bag is empty</p>
+            <a href="index.html"><button class="btn">CONTINUE SHOPPING</button></a>
+        </div>
+        
+        <div id="bagDiv">
+            <div class="foralign">
+
+                <div id="upDiv" class="upDiv">
+                    <p>ITEMS</p>
+                    <p>QUANTITY</p>
+                    <p>PRICE</p>
+                </div>    
+                <div id="bagDivLeft" class="bagDivLeft">
+                    
+                </div>
+                <div id="rmvallbtn">
+                <button  onclick="removeitems()" style="background-color: white; border:1px solid black; color: black; margin-top: 10px;">Remove All Items</button>
+            </div>
+            </div>
+            
+            
+            <div class="bagDivRight">
+           <div id="container">
+                    <!-- //discount -->
+                    <h3>Discount code?</h3>
+                     <input id="discount" type="text">
+                        <!-- mehtab adding this function -->
+                        <button onclick="validate()">Apply</button>
+                    </form>
+                    <div class="checkoutDiv">
+                        <div class="subtotal">
+                            <p id="subTotal">1 item</p>
+                            <!-- mehtab adding this -->
+                            <p style="color: green; margin-left:40px;"  id="confirmation"></p>
+                            <p id="sum" style="margin-left:200px">$15.00 USD</p>
+                        </div>
+                        <div>
+                            <p>or payments of something need to be edit</p>
+                        </div>
+                        <a href="checkoutPage.html"><button>CHECKOUT</button></a>
+                    </div>
+                    <div>
+                        <img src="https://i.ibb.co/XJPtDjP/Capture.jpg" alt="no load">
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        
+        
+    </div>
+
+<!-- ************************************** -->
+
+<!-- mehtab work started -->
+<div id="flabel" style="display: none" class="aboveLabel">
+    <h2>Your Favorites</h2>
+</div>
+
+<div id="favP" class="products">
+
+</div>
+<!-- <button onclick="removeFavitems()" style="margin-left: 42%; display: none; background-color: white; border:1px solid black; color: black; margin-top: 15px;">Remove All Items</button> -->
+
+
+ <!-- mehtab work done -->
+    <div class="aboveLabel">
+        <h2>SUGGESTED ADD-ONS</h2>
+    </div>
+
+    <div id="products" class="products">
+
+    </div>
+
+    <div class="aboveLabel">
+        <h2>RECOMMENDED FOR YOUR</h2>
+    </div>
+
+    <div id="productsRecommend" class="products">
+
+        
+    </div>
+
+    <!-- mehtab's footer part   -->
+
+    <div style="margin-top: 20px;" class="footer">
+        <div class="left">
+            <h2 style="text-align: center; margin-left: 10px;">SHOP FASTER WITH THE APP</h2>
+            <div  style="margin-top: -50px; margin-left: 20px">
+            <a href="https://apps.apple.com/us/app/fashion-nova/id1367363988"><img src="https://www.freepnglogos.com/uploads/app-store-logo-png/available-the-app-store-badge-vector-11.png" height="150px"></a>
+         </div>
+         <div style="margin-top: -60px;">
+         <a href="https://play.google.com/store/apps/details?id=co.tapcart.app.npQt0DXZpj&hl=en_US&gl=US"><img src="https://www.freepnglogos.com/uploads/itunes-logo/google-play-itunes-png-logo-4.png" height="100px" width="250px"></a>
+         </div>
+            
+ 
+        </div>
+        <div class="middle">
+          
+                <table>
+                    <tr class="head">
+                                   <td><b>GET HELP</b></td>
+                                   <td><b>COMPANY</b></td>
+                                   <td><b>QUICKLINKS</b></td>
+                        
+                    </tr>
+                 </div>
+                 
+                 <div>
+                    <tr>
+                                   <td>HELP CENTER</td>
+                                   <td>CAREERS</td>
+                                   <td>SIZE GUIDE</td>
+                     
+                 </tr>
+                 <tr>
+                                   <td>TRACK ORDER</td>
+                                   <td>ABOUT</td>
+                                   <td>GIFT CARDS</td>
+                     
+                 </tr>
+                 <tr>
+                                   <td>SHIPPING INFO</td>
+                                   <td>STORES</td>
+                    
+                     
+                 </tr>
+                 <tr>
+                                   <td>RETURNS</td>
+                                   <td>Want to collab?</td>
+                    
+                     
+                 </tr>
+                 <tr>
+                                   <td>CONTACT US</td>
+                    
+                    
+                     
+                 </tr>
+             </div>
+                </table>
+ 
+        </div>
+        <div class="right">
+            &nbsp;
+            <h2 style="margin-top: 10px;margin-left: 10px; "> SIGN UP FOR DISCOUNTS + UPDATES</h2>
+            <input type="email" id="email" name="email" placeholder="Email Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8594;">
+            <p style="margin-top: 10px; margin-left: 44px; font-size: 12px;">
+             By signing up for email, you agree to Fashion Nova's <a href="#">Terms of Service and Privacy</a>Policy.</p>
+             <div class="socialmedia">
+             <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+             <a href="#" class="fa fa-youtube"></a>
+         </div>
+         <hr>
+         <p style="float: right; margin-right: 20px;">© 2021 Fashion Nova, LLC All Rights Reserved</p>
+            
+ 
+ 
+ 
+        </div>
+       </div>
+    
+</body>
+</html>
+<script src="js/shoppingBag.js"></script>
