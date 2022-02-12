@@ -1,4 +1,4 @@
-> This is the clone of [Fashion Nova](www.fashionnova.com). We started this project as a four member team during construct week organised at Masai School, Bengaluru, Karnataka.
+> This is the clone of [Fashion Nova](www.fashionnova.com). We started this project as a four member team during construct week organised at Masai School, Bengaluru, Karnataka. You can find the project demo [here](https://mehtab39.github.io/projectfashionnova/root/index.html).
 
 ## Table of contents
 
